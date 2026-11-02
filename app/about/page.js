@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Reveal from "@/components/ui/Reveal";
 
 // PAGE 3 — About the company. Edit the text to tell your team's story.
 export const metadata = { title: "About — FEELING FIND" };
@@ -22,8 +23,8 @@ export default function AboutPage() {
   return (
     <div className="container">
       <section className="about-hero">
-        <img src="/logo.svg" alt="" width="72" height="72" />
-        <h1>About FEELING FIND</h1>
+        <p className="eyebrow">About Feeling Find</p>
+        <h1>Fashion that <em>fits your life.</em></h1>
         <p className="lead">
           We help disabled people and their families find adaptive clothing — and the shops that sell it — by simply
           describing what they need.
@@ -31,16 +32,17 @@ export default function AboutPage() {
       </section>
 
       <section className="values" aria-label="What we believe">
-        {VALUES.map((v) => (
-          <div className="card" key={v.title}>
+        {VALUES.map((v, i) => (
+          <Reveal className="card value-card" key={v.title} delay={i * 90}>
+            <span className="how-num" aria-hidden="true">0{i + 1}</span>
             <h3>{v.title}</h3>
-            <p className="muted" style={{ margin: 0 }}>{v.text}</p>
-          </div>
+            <p className="muted">{v.text}</p>
+          </Reveal>
         ))}
       </section>
 
-      <section className="card narrow" style={{ margin: "0 auto" }}>
-        <h2 style={{ marginTop: 0 }}>Our story</h2>
+      <section className="card narrow story-card">
+        <h2>Our story</h2>
         <p>
           Finding clothes that work with a wheelchair, a prosthesis, limited hand movement or sensory needs often
           means hours of searching. FEELING FIND brings it together in one place: chat with our assistant, see
@@ -52,7 +54,7 @@ export default function AboutPage() {
           Anything you tell us about your needs is private to your account. We only use it to improve your search
           results if you switch that on in your profile, and you can change or delete it at any time.
         </p>
-        <Link href="/" className="btn">Start searching</Link>
+        <Link href="/discover" className="btn">Find clothes for me <span aria-hidden="true">→</span></Link>
       </section>
     </div>
   );

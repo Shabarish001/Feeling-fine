@@ -2,6 +2,7 @@
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
+import FabricSculpture from "@/components/ui/FabricSculpture";
 import { signIn, signUp } from "@/app/auth/actions";
 
 function SubmitButton({ children }) {
@@ -19,7 +20,12 @@ export default function AuthForm({ mode, next, notice }) {
 
   return (
     <div className="auth-wrap">
-      <div className="card">
+      <aside className="auth-art" aria-hidden="true">
+        <p className="eyebrow">Feeling Find</p>
+        <p className="auth-quote">Wear what<br /><em>feels right.</em></p>
+        <FabricSculpture />
+      </aside>
+      <div className="card auth-card">
         <h1>{isSignUp ? "Create an Account" : "Sign In"}</h1>
         <p className="muted">
           {isSignUp
@@ -65,7 +71,7 @@ export default function AuthForm({ mode, next, notice }) {
           <SubmitButton>{isSignUp ? "Create my account" : "Sign In"}</SubmitButton>
         </form>
 
-        <p style={{ marginBottom: 0, textAlign: "center" }}>
+        <p className="auth-switch">
           {isSignUp ? (
             <>Already have an account? <Link href="/login">Sign In</Link></>
           ) : (

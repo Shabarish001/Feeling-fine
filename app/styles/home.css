@@ -1,0 +1,97 @@
+/* HOME — editorial hero, fabric sculpture, journey cards, how-it-works, store search */
+.fashion-hero {
+  max-width: 1180px; margin: 0 auto; padding: var(--s-7) var(--inset) var(--s-8);
+  display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--s-6); align-items: center; min-height: min(78vh, 760px);
+}
+.hero-copy h1 { font-size: clamp(2.8rem, 6.4vw, 5.6rem); font-weight: 400; letter-spacing: -.025em; margin-bottom: var(--s-5); }
+.hero-lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 34rem; margin-bottom: var(--s-6); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-bottom: var(--s-6); }
+.quality-row { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); }
+
+.hero-art { position: relative; min-height: 460px; display: grid; place-items: center; }
+.hero-tag { position: absolute; padding: 10px 18px; border-radius: var(--r-pill); display: flex; flex-direction: column; line-height: 1.25; font-size: .78rem; color: var(--ink-soft); border: 1px solid var(--glass-edge); box-shadow: inset 0 1px 0 var(--glass-rim), var(--shadow-glass); z-index: 2; }
+.hero-tag b { font-size: .92rem; color: var(--ink); }
+.hero-tag-a { top: 12%; left: 2%; animation: float-a 7s ease-in-out infinite; }
+.hero-tag-b { bottom: 20%; right: 0; animation: float-a 8s ease-in-out -3s infinite; }
+.hero-caption { position: absolute; left: 4%; bottom: 3%; margin: 0; padding: 8px 14px; border-radius: 14px; background: rgb(253 251 247 / .9); box-shadow: var(--shadow-1); font: italic 400 1.15rem/1.3 var(--font-display); color: var(--ink); z-index: 2; }
+@keyframes float-a { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* ---- Fabric sculpture: CSS 3D ribbons, one rotating transform, no filters in the loop ---- */
+.sculpture { position: relative; width: min(100%, 460px); aspect-ratio: 1 / 1.05; display: grid; place-items: center; }
+.sculpture-glow { position: absolute; inset: 8% 10%; border-radius: 50%; background: radial-gradient(circle, rgb(169 155 217 / .55), rgb(180 112 90 / .18) 55%, transparent 70%); }
+.sculpture-stage { position: relative; width: 100%; height: 100%; perspective: 1100px; display: grid; place-items: center; }
+.sculpture-spin { position: relative; width: 150px; height: 330px; transform-style: preserve-3d; animation: sculpt-spin 28s linear infinite; transform: rotateX(-12deg); }
+.fold {
+  position: absolute; inset: 0; border-radius: 120px / 160px;
+  transform: rotateY(calc(var(--i) * 22.5deg)) translateZ(118px) rotateZ(calc(var(--i) * 3deg - 22deg)) skewY(calc(var(--i) * -1.2deg));
+  background: linear-gradient(105deg, #fdfbf7 0%, #ddd5f1 32%, #a99bd9 62%, #6a58aa 100%);
+  box-shadow: inset 0 0 26px rgb(63 51 102 / .28), inset -10px 0 22px rgb(255 255 255 / .35);
+  opacity: .92;
+}
+.fold:nth-child(3n) { background: linear-gradient(105deg, #fdfbf7 0%, #f6e6dc 38%, #d8a995 72%, #b4705a 100%); }
+.fold:nth-child(4n + 1) { background: linear-gradient(105deg, #f8f4ec 0%, #eee7da 40%, #cdbfa5 100%); }
+.sculpture-floor { position: absolute; bottom: 3%; width: 58%; height: 26px; border-radius: 50%; background: radial-gradient(closest-side, rgb(63 51 102 / .28), transparent); }
+@keyframes sculpt-spin { to { transform: rotateX(-12deg) rotateY(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .sculpture-spin { animation: none; transform: rotateX(-12deg) rotateY(38deg); }
+  .hero-tag { animation: none; }
+}
+
+/* ---- Journey cards (solid content) ---- */
+.journey { max-width: 1180px; margin: 0 auto; padding: 0 var(--inset); display: grid; grid-template-columns: 1.2fr 1fr; gap: var(--s-5); }
+.journey-card { border-radius: var(--r-sheet); padding: var(--s-7) var(--s-6); display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); position: relative; overflow: hidden; }
+.journey-card h2 { margin-bottom: var(--s-2); }
+.journey-card p:not(.eyebrow) { color: var(--ink-soft); max-width: 28rem; margin-bottom: var(--s-4); }
+.journey-edit { background: linear-gradient(150deg, #fdfbf7 30%, var(--lavender-100)); border: 1px solid var(--lavender-200); box-shadow: var(--shadow-2); }
+.journey-stores { background: linear-gradient(150deg, #fdfbf7 30%, var(--clay-soft)); border: 1px solid rgb(221 210 191 / .9); box-shadow: var(--shadow-1); }
+.journey-card::after { content: ""; position: absolute; right: -60px; bottom: -60px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgb(169 155 217 / .3), transparent 70%); pointer-events: none; }
+
+/* ---- How it works ---- */
+.how { max-width: 1180px; margin: 0 auto; padding: var(--s-9) var(--inset) var(--s-8); }
+.how h2 { max-width: 30rem; margin-bottom: var(--s-6); }
+.how-steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-5); }
+.how-step { border-top: 1px solid var(--ink); padding-top: var(--s-4); }
+.how-num { font: italic 400 2.6rem/1 var(--font-display); color: var(--lavender-600); display: block; margin-bottom: var(--s-3); }
+.how-step p { color: var(--ink-soft); margin: 0; }
+
+/* ---- Nearby-store search: a glass search control over rich brand light ---- */
+.chat-home { position: relative; padding: var(--s-9) var(--inset); text-align: center; overflow: hidden; }
+.chat-home-bg {
+  position: absolute; inset: 24px var(--inset); border-radius: 40px; z-index: 0;
+  background:
+    radial-gradient(520px 320px at 20% 20%, rgb(106 88 170 / .5), transparent 70%),
+    radial-gradient(480px 300px at 85% 75%, rgb(180 112 90 / .4), transparent 70%),
+    linear-gradient(135deg, #cfc5ec, #efe3da);
+}
+.chat-home-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: var(--s-6) 0; }
+.hero-logo { width: 56px; height: 56px; margin-bottom: var(--s-3); }
+.chat-home h2 { font-size: clamp(2rem, 4.2vw, 3.2rem); }
+.intro { color: var(--ink); max-width: 34rem; margin: 0 auto var(--s-5); }
+.composer-wrap { border-radius: 32px; padding: 8px; text-align: left; }
+.composer-wrap .composer { border-color: transparent; box-shadow: none; }
+.suggestions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-2); margin-top: var(--s-5); }
+.suggestion {
+  min-height: 44px; padding: 10px 18px; border-radius: var(--r-pill); border: 1px solid rgb(63 51 102 / .22);
+  background: rgb(253 251 247 / .86); color: var(--ink); font: 500 .92rem var(--font-body); cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), background var(--t-fast);
+}
+.suggestion:hover { background: #fff; transform: translateY(-2px); }
+.suggestion:active { transform: scale(.97); }
+
+@media (max-width: 900px) {
+  .fashion-hero { grid-template-columns: 1fr; min-height: 0; padding-top: var(--s-5); }
+  .hero-art { min-height: 380px; order: -1; }
+  .sculpture { width: min(78%, 340px); }
+  .journey { grid-template-columns: 1fr; }
+  .how-steps { grid-template-columns: 1fr; }
+  .how { padding-top: var(--s-8); }
+}
+@media (max-width: 520px) {
+  .hero-tag-a { left: 0; top: 6%; }
+  .hero-tag-b { right: 0; bottom: 14%; }
+  .journey-card { padding: var(--s-6) var(--s-5); }
+  .chat-home-bg { inset: 16px 8px; border-radius: 28px; }
+}
+
+/* Keyboard focus for the home search: the wrapper carries the ring, since the inner composer has no shadow of its own here. */
+.composer-wrap:focus-within { outline: 3px solid var(--focus); outline-offset: 3px; }

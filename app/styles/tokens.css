@@ -1,0 +1,64 @@
+/* ==========================================================================
+   FEELING FIND — design tokens (Project Brand System + Liquid Glass material)
+   One knob per property: change a value here and every page follows.
+   ========================================================================== */
+:root {
+  /* ---- Brand: ivory, warm neutrals, lavender, one restrained clay accent ---- */
+  --ivory-50:  #fdfbf7;   /* cards, fields */
+  --ivory-100: #f8f4ec;   /* page */
+  --ivory-200: #eee7da;   /* quiet fills */
+  --sand-300:  #ddd2bf;   /* hairlines on solid surfaces */
+  --stone-500: #857c70;   /* decorative only (fails 4.5:1 for text) */
+  --ink:       #26212d;   /* text, 15:1 on ivory */
+  --ink-soft:  #585062;   /* secondary text, 7:1 on ivory */
+  --lavender-100: #efebf9;
+  --lavender-200: #ddd5f1;
+  --lavender-400: #a99bd9;
+  --lavender-600: #6a58aa;
+  --lavender-800: #3f3366; /* primary action base */
+  --clay:      #b4705a;   /* sparing accent: demo badges, active map pin */
+  --clay-soft: #f6e6dc;
+  --success:   #2c6a4d;
+  --danger:    #9d2e3e;
+  --focus:     #4a37b8;
+
+  /* ---- Type ---- */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Space (4/8 base) ---- */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px;
+  --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 120px;
+
+  /* ---- Radius roles (concentric: inner = outer − padding) ---- */
+  --r-sheet: 28px;    /* panels, sheets, dialogs */
+  --r-card: 22px;     /* product + store cards */
+  --r-control: 14px;  /* fields, buttons in forms */
+  --r-icon: 12px;     /* small icon buttons */
+  --r-pill: 999px;    /* chips, filters, nav, statuses */
+
+  /* ---- Ink-tinted shadows (never pure black) ---- */
+  --shadow-1: 0 1px 2px rgb(38 33 45 / .06), 0 6px 18px rgb(38 33 45 / .06);
+  --shadow-2: 0 2px 4px rgb(38 33 45 / .05), 0 14px 36px rgb(38 33 45 / .10);
+  --shadow-glass: 0 1px 1px rgb(38 33 45 / .05), 0 10px 32px rgb(63 51 102 / .14);
+
+  /* ---- Liquid Glass material tiers ----
+     Fill is the brand ivory (not white). Opacities follow the skill's tiers
+     but sit toward the opaque side for legibility; contrast verified in
+     DESIGN_SYSTEM.md. */
+  --glass-tint: 253 251 247;
+  --glass-thin-a: .58;    --glass-thin-blur: 16px;
+  --glass-regular-a: .72; --glass-regular-blur: 22px;  /* ~Figma 50% → 72% in CSS: the look, not the slider */
+  --glass-thick-a: .86;   --glass-thick-blur: 28px;
+  --glass-sat: 135%;
+  --glass-rim: rgb(255 255 255 / .75);
+  --glass-edge: rgb(63 51 102 / .14);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(.22, .8, .24, 1);
+  --t-fast: 160ms; --t-med: 260ms; --t-slow: 600ms;
+
+  /* ---- Layout ---- */
+  --header-h: 76px;
+  --inset: clamp(12px, 3vw, 24px);  /* consistent floating inset */
+}

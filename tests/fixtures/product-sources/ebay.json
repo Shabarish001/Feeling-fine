@@ -1,0 +1,76 @@
+{
+  "itemSummaries": [
+    {
+      "itemId": "v1|100001|0",
+      "title": "Fixture Adaptive Magnetic Shirt",
+      "itemWebUrl": "https://fixture.example/item/100001",
+      "categoryPath": "Clothing > Shirts",
+      "price": {
+        "value": "49.00",
+        "currency": "EUR"
+      },
+      "image": {
+        "imageUrl": "https://fixture.example/images/e1.jpg"
+      },
+      "localizedAspects": [
+        {
+          "name": "Material",
+          "value": "100% Cotton"
+        },
+        {
+          "name": "Closure",
+          "value": "Magnetic closure"
+        },
+        {
+          "name": "Size",
+          "value": "M"
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingCostType": "FIXED",
+          "shippingCost": {
+            "value": "4.00",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "v1|100002|0",
+      "title": "Fixture Sensory Soft Cotton Top",
+      "itemWebUrl": "https://fixture.example/item/100002",
+      "categoryPath": "Clothing > Tops",
+      "price": {
+        "value": "24.00",
+        "currency": "EUR"
+      },
+      "localizedAspects": [
+        {
+          "name": "Material",
+          "value": "Cotton"
+        },
+        {
+          "name": "Sensory Features",
+          "value": "Tagless"
+        }
+      ]
+    },
+    {
+      "itemId": "v1|100003|0",
+      "title": "Fixture Easy Dressing Trousers",
+      "itemWebUrl": "https://fixture.example/item/100003",
+      "categoryPath": "Clothing > Trousers",
+      "price": {
+        "value": "38.00",
+        "currency": "EUR"
+      },
+      "localizedAspects": [
+        {
+          "name": "Features",
+          "value": "Elastic waist"
+        }
+      ]
+    }
+  ]
+}

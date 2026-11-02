@@ -14,7 +14,7 @@ export default function SearchView() {
   const [loading, setLoading] = useState(false);
   const messagesRef = useRef([]); // always holds the latest conversation
   const started = useRef(false);
-  const bottomRef = useRef(null);
+  const listRef = useRef(null); // the message list scrolls itself; the page must not jump
 
   const send = useCallback(async (text) => {
     const next = [...messagesRef.current, { role: "user", content: text }];
@@ -48,16 +48,22 @@ export default function SearchView() {
     }
   }, [initialQuery, send]);
 
+  // Scroll only the chat list. scrollIntoView would also scroll the whole page on phones and hide the map.
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+    const el = listRef.current;
+    if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
   }, [messages, loading]);
 
   return (
     <div className="search-layout">
       <section className="search-chat" aria-label="Chat">
-        <div className="messages" aria-live="polite">
+        <div className="chat-head">
+          <p className="eyebrow">Nearby stores</p>
+          <h1>Find shops near you</h1>
+        </div>
+        <div className="messages" ref={listRef} aria-live="polite">
           {messages.length === 0 && !loading && (
-            <p className="muted">Ask me about any clothing you need — I&apos;ll show matching shops on the map.</p>
+            <p className="muted">Ask about any clothing you need and we&apos;ll show matching shops on the map.</p>
           )}
           {messages.map((m, i) =>
             m.role === "user" ? (
@@ -75,12 +81,11 @@ export default function SearchView() {
           {loading && (
             <div className="msg-assistant">
               <img src="/logo.svg" alt="" />
-              <div className="typing" role="status" aria-label="Looking for clothes…">
+              <div className="typing" role="status" aria-label="Looking for stores…">
                 <span /><span /><span />
               </div>
             </div>
           )}
-          <div ref={bottomRef} />
         </div>
         <Composer onSend={send} disabled={loading} placeholder="Ask a follow-up question…" />
       </section>

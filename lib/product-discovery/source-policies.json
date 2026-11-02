@@ -1,0 +1,6 @@
+﻿{
+  "zalando.de": {"extract_for_research": false, "reason": "Automated access/robots check returned HTTP 403; source reuse rights unconfirmed.", "terms_url": "https://www.zalando.de/zalando-terms/"},
+  "primark.com": {"extract_for_research": false, "reason": "Robots check returned HTTP 403; terms restrict commercial use and copying without a license.", "terms_url": "https://www.primark.com/en-gb/terms-and-conditions"},
+  "adaptawear.com": {"extract_for_research": false, "reason": "Terms reserve site content and restrict copying and commercial use without written consent.", "terms_url": "https://adaptawear.com/terms-conditions/"},
+  "livostyle.com": {"extract_for_research": false, "reason": "Website terms restrict reproduction; open dataset license does not automatically license site-page extraction.", "terms_url": "https://livostyle.com/policies/terms-of-service"}
+}

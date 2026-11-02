@@ -1,0 +1,50 @@
+/* ACCOUNT — login, signup, profile, files, about */
+.auth-wrap { max-width: 1040px; margin: 0 auto; padding: var(--s-7) var(--inset) var(--s-9); display: grid; grid-template-columns: 1fr minmax(360px, 460px); gap: var(--s-7); align-items: center; }
+.auth-art { display: grid; justify-items: start; gap: var(--s-2); }
+.auth-art .eyebrow { margin: 0; }
+.auth-quote { font: 400 clamp(2.4rem, 4.4vw, 3.6rem)/1.05 var(--font-display); letter-spacing: -.02em; margin: 0; }
+.auth-art .sculpture { width: min(100%, 340px); margin-top: var(--s-3); }
+.auth-card { padding: var(--s-6); box-shadow: var(--shadow-2); }
+.auth-card h1 { font-size: 2.2rem; margin-bottom: var(--s-2); }
+.auth-card > .muted { margin-bottom: var(--s-5); }
+.auth-switch { margin: var(--s-5) 0 0; text-align: center; }
+
+.page-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--s-4); flex-wrap: wrap; margin-bottom: var(--s-6); }
+.page-head h1 { font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: var(--s-2); }
+.page-head .muted { margin: 0; }
+.page-head-actions { display: flex; gap: var(--s-3); flex-wrap: wrap; align-items: center; }
+
+.profile-grid { display: grid; grid-template-columns: 1fr; gap: var(--s-5); }
+.needs-fieldset { border: 0; padding: 0; margin: 0 0 var(--s-5); }
+.needs-fieldset legend { padding: 0; }
+.consent-check { margin-bottom: var(--s-5); }
+.file-list { list-style: none; padding: 0; margin: var(--s-4) 0 0; }
+.file-row { display: flex; align-items: center; gap: var(--s-3); padding: var(--s-3) 0; border-top: 1px solid var(--ivory-200); flex-wrap: wrap; }
+.file-row .name { font-weight: 600; word-break: break-all; }
+.file-row .actions { margin-left: auto; display: flex; gap: var(--s-2); }
+
+/* About */
+.about-hero { text-align: center; max-width: 760px; margin: var(--s-6) auto var(--s-8); }
+.about-hero h1 { font-weight: 400; letter-spacing: -.025em; }
+.lead { font-size: 1.2rem; color: var(--ink-soft); }
+.values { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-5); margin-bottom: var(--s-8); }
+.value-card .muted { margin: 0; }
+.value-card .how-num { font-size: 2.2rem; }
+.story-card { margin: 0 auto; }
+.story-card h2 { font-size: 1.8rem; }
+.story-card h2:not(:first-child) { margin-top: var(--s-5); }
+
+@media (max-width: 860px) {
+  .auth-wrap { grid-template-columns: 1fr; padding-top: var(--s-4); gap: var(--s-4); }
+  .auth-art { display: none; }
+  .values { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .card { padding: var(--s-5) var(--s-4); border-radius: 24px; }
+  .file-row .actions { margin-left: 0; }
+}
+
+/* Error and not-found pages */
+.state-page { max-width: 640px; margin: var(--s-9) auto; padding: 0 var(--inset); text-align: left; }
+.state-page h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: var(--s-3); }
+.state-page p.muted { margin-bottom: var(--s-5); }

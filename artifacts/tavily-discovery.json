@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-11-02T17:50:58.080Z",
+  "mode": "local_research_only",
+  "limits": {
+    "max_credits": 14,
+    "max_results": 5,
+    "max_extract_pages": 5
+  },
+  "credit_usage": {
+    "reported": 12,
+    "reported_unknown": false,
+    "reserved_upper_bound": 12
+  },
+  "requests": [
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2204
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2853
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 1120
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2768
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2864
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2251
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2563
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 1257
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2220
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2253
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 1844
+    },
+    {
+      "endpoint": "search",
+      "status": 200,
+      "reported_credits": 1,
+      "reserved_credits": 1,
+      "elapsed_ms": 2621
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://adaptawear.com/shop/mens-magnetic-fastening-shirts/mens-magnetic-easy-fastening-shirt-by-evelyn-wood",
+      "title": "Men's Magnetic Easy-Fastening Shirt by Evelyn & Wood - Adaptawear",
+      "domain": "adaptawear.com",
+      "queries": [
+        "adaptive shirt magnetic buttons magnetic closure"
+      ],
+      "status": "unverified_search_candidate"
+    },
+    {
+      "url": "https://adaptawear.com/shop/all-menswear-products/mens-magnetic-shirt",
+      "title": "Men's Magnetic Shirt - Adaptawear",
+      "domain": "adaptawear.com",
+      "queries": [
+        "adaptive shirt magnetic buttons magnetic closure"
+      ],
+      "status": "unverified_search_candidate"
+    },
+    {
+      "url": "https://adaptawear.com/shop/all-womens-products/womens-easy-fit-drop-front-trousers",
+      "title": "Women's Easy-Fit Drop-Front Trousers - Adaptawear",
+      "domain": "adaptawear.com",
+      "queries": [
+        "elastic waist trousers easy dressing adaptive"
+      ],
+      "status": "unverified_search_candidate"
+    }
+  ],
+  "products": [],
+  "errors": [],
+  "source_restrictions": {
+    "zalando.de": {
+      "extract_for_research": false,
+      "reason": "Automated access/robots check returned HTTP 403; source reuse rights unconfirmed.",
+      "terms_url": "https://www.zalando.de/zalando-terms/"
+    },
+    "primark.com": {
+      "extract_for_research": false,
+      "reason": "Robots check returned HTTP 403; terms restrict commercial use and copying without a license.",
+      "terms_url": "https://www.primark.com/en-gb/terms-and-conditions"
+    },
+    "adaptawear.com": {
+      "extract_for_research": false,
+      "reason": "Terms reserve site content and restrict copying and commercial use without written consent.",
+      "terms_url": "https://adaptawear.com/terms-conditions/"
+    }
+  },
+  "summary": {
+    "search_requests": 12,
+    "extract_requests": 0,
+    "discovered_product_candidates": 3,
+    "valid_products": 0,
+    "products_with_verified_images": 0,
+    "products_with_price": 0,
+    "products_with_composition": 0,
+    "products_with_features": 0,
+    "extracted_pages_successfully": 0
+  },
+  "experiment_note": "Twelve initial searches; two supplemental priority-domain searches are recorded in tavily-priority-check.json. Source restrictions prevented product-page extraction. Search candidates are unverified and are not normalized products. The initial Zalando SKU filter was overly strict and was corrected after this run; rejected raw URLs were not retained."
+}
