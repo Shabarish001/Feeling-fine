@@ -69,9 +69,9 @@ export default function ProfileForm({ profile, email, demo }) {
           </div>
         </div>
 
-        <fieldset className="field" style={{ border: "none", padding: 0, margin: "0 0 18px" }}>
+        <fieldset className="field needs-fieldset">
           <legend>Disability or special needs</legend>
-          <p className="hint" style={{ marginBottom: 8 }}>Tick anything that applies. This helps us suggest the right features.</p>
+          <p className="hint">Tick anything that applies. This helps us suggest the right features.</p>
           <div className="checkbox-grid">
             {NEEDS.map((n) => (
               <label key={n} className="check">
@@ -88,7 +88,7 @@ export default function ProfileForm({ profile, email, demo }) {
             placeholder="In your own words, e.g. “I use a wheelchair and find buttons hard.”" />
         </div>
 
-        <label className="check" style={{ marginBottom: 20 }}>
+        <label className="check consent-check">
           <input type="checkbox" name="use_needs_in_chat" defaultChecked={!!profile.use_needs_in_chat} />
           Use my needs to personalise my search results
         </label>

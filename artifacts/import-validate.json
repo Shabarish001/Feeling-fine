@@ -1,0 +1,379 @@
+{
+  "mode": "--validate",
+  "source_counts": {
+    "input_rows": 28,
+    "unique_candidate_records": 28,
+    "duplicate_rows": 0,
+    "with_reported_price_and_currency": 28,
+    "with_direct_format_url_unverified": 18,
+    "with_image_url": 3,
+    "with_reported_accessibility_attributes": 28,
+    "with_observation_date": 16,
+    "requiring_review": 28,
+    "approved_for_import": 0,
+    "currencies": {
+      "EUR": 12,
+      "GBP": 10,
+      "USD": 6
+    }
+  },
+  "eligible": 0,
+  "needs_review": 28,
+  "products": [
+    {
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "name": "PierreT magnetic dress shirt",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "name": "Nils side-zip rehabilitation trousers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "Karma magnetic and zip adaptive trousers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "Jason adaptive jersey trousers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "Homer seated-fit trousers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "Chuck adaptive jeans",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "Moses four-zip rehabilitation trousers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "SusannaT magnetic blouse",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "JonasT magnetic zipper winter jacket",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "AIR LONG Bamboo sensory long sleeve blue",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "AIR TEE sensory t-shirt marine",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": null,
+      "name": "SENSE bamboo sensory boxers",
+      "reasons": [
+        "missing product identity, category or direct URL",
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "name": "Estelle Relaxed 3/4 Sleeve Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/carly-classic-velcro-brand-fastening-shirt",
+      "name": "Carly Classic Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "name": "Gillian Cotton Velcro Fastening Blouse",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "name": "Camilla Cotton Seersucker Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "name": "Chambray Cotton Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "name": "Aoife Notch Neck Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "name": "Tiana Cotton Notch Neck Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/olivia-oxford-shirt-pink",
+      "name": "Olivia Cotton Oxford Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "name": "Delores Cotton Jersey Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.theablelabel.com/products/imogen-jersey-shirt-golden-lime",
+      "name": "Imogen Jersey Velcro Fastening Shirt",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://joeandbella.com/products/short-sleeve-everyday-magnetic-button-shirt-for-men",
+      "name": "Short-Sleeve Everyday Magnetic-Button Shirt for Men",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "name": "HoodEase Magnetic Zip-Up Hoodie",
+      "reasons": [
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "name": "CareZips Men’s Access Pants",
+      "reasons": [
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "name": "Everyday Side-Zip Pants for Men",
+      "reasons": [
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://joeandbella.com/products/everyday-magnetic-flannel-for-women",
+      "name": "Everyday Magnetic Flannel for Women",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    },
+    {
+      "product_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "name": "ABLE Signature Crew",
+      "reasons": [
+        "missing price, image or accessibility features",
+        "missing review and source/rights references",
+        "verification or field-level rights incomplete",
+        "material composition not verified",
+        "review missing or older than seven days",
+        "verified price, currency or image differs from CSV"
+      ],
+      "plan": null
+    }
+  ]
+}

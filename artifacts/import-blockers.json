@@ -1,0 +1,853 @@
+{
+  "generated_for": "data/imports/*.csv",
+  "total": 28,
+  "eligible": 0,
+  "records": [
+    {
+      "name": "PierreT magnetic dress shirt",
+      "retailer": "Tamonda",
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "price": "EUR 130.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Nils side-zip rehabilitation trousers",
+      "retailer": "Tamonda",
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "price": "EUR 49.95",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Karma magnetic and zip adaptive trousers",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 130.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Jason adaptive jersey trousers",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 140.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Homer seated-fit trousers",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 110.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Chuck adaptive jeans",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 140.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Moses four-zip rehabilitation trousers",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 30.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "SusannaT magnetic blouse",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 140.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "JonasT magnetic zipper winter jacket",
+      "retailer": "Tamonda",
+      "product_url": null,
+      "price": "EUR 210.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "AIR LONG Bamboo sensory long sleeve blue",
+      "retailer": "Blusss",
+      "product_url": null,
+      "price": "EUR 59.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "AIR TEE sensory t-shirt marine",
+      "retailer": "Blusss",
+      "product_url": null,
+      "price": "EUR 55.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "SENSE bamboo sensory boxers",
+      "retailer": "Blusss",
+      "product_url": null,
+      "price": "EUR 35.00",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "clothing category",
+        "direct https product URL",
+        "product image URL",
+        "price observation date"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ]
+    },
+    {
+      "name": "Estelle Relaxed 3/4 Sleeve Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "price": "GBP 59",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Carly Classic Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/carly-classic-velcro-brand-fastening-shirt",
+      "price": "GBP 59",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Gillian Cotton Velcro Fastening Blouse",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "price": "GBP 59",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Camilla Cotton Seersucker Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "price": "GBP 52",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Chambray Cotton Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "price": "GBP 52",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Aoife Notch Neck Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "price": "GBP 55",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Tiana Cotton Notch Neck Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "price": "GBP 39.19",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Olivia Cotton Oxford Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/olivia-oxford-shirt-pink",
+      "price": "GBP 37.45",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Delores Cotton Jersey Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "price": "GBP 41.6",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Imogen Jersey Velcro Fastening Shirt",
+      "retailer": "The Able Label",
+      "product_url": "https://www.theablelabel.com/products/imogen-jersey-shirt-golden-lime",
+      "price": "GBP 35.1",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "Short-Sleeve Everyday Magnetic-Button Shirt for Men",
+      "retailer": "Joe & Bella",
+      "product_url": "https://joeandbella.com/products/short-sleeve-everyday-magnetic-button-shirt-for-men",
+      "price": "USD 78",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "HoodEase Magnetic Zip-Up Hoodie",
+      "retailer": "Joe & Bella",
+      "product_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "price": "USD 88",
+      "image_permission": "unverified",
+      "missing_in_csv": [
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ]
+    },
+    {
+      "name": "CareZips Men’s Access Pants",
+      "retailer": "Joe & Bella",
+      "product_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "price": "USD 81",
+      "image_permission": "unverified",
+      "missing_in_csv": [],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ]
+    },
+    {
+      "name": "Everyday Side-Zip Pants for Men",
+      "retailer": "Joe & Bella",
+      "product_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "price": "USD 81",
+      "image_permission": "unverified",
+      "missing_in_csv": [],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ]
+    },
+    {
+      "name": "Everyday Magnetic Flannel for Women",
+      "retailer": "Joe & Bella",
+      "product_url": "https://joeandbella.com/products/everyday-magnetic-flannel-for-women",
+      "price": "USD 78",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    },
+    {
+      "name": "ABLE Signature Crew",
+      "retailer": "ABLE",
+      "product_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "price": "USD 23",
+      "image_permission": "not_collected",
+      "missing_in_csv": [
+        "product image URL",
+        "(material is present, so material_verified + material_evidence_url are required)"
+      ],
+      "missing_attestations": [
+        "reference_url (price source)",
+        "feature_evidence_url",
+        "rights_reference_url (image rights)",
+        "url_verified=true",
+        "image_matches_product=true",
+        "accessibility_verified=true",
+        "storage_and_display_approved=true",
+        "image_display_approved=true",
+        "checked_at within 7 days",
+        "price/currency/image_url matching the CSV row",
+        "material_verified=true",
+        "material_evidence_url"
+      ],
+      "importer_review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ]
+    }
+  ]
+}

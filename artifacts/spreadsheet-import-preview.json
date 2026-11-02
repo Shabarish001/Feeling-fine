@@ -1,0 +1,1592 @@
+{
+  "note": "Local research preview only. Supplied claims, URL formats, prices, and permissions are not independently verified.",
+  "columns": {
+    "feeling_find_germany_product_candidates.csv": [
+      "product_name",
+      "retailer",
+      "observed_price_eur",
+      "currency",
+      "seller_claimed_features",
+      "source_url",
+      "url_type",
+      "retailer_sku_or_variant",
+      "image_url",
+      "image_usage_permission",
+      "data_status"
+    ],
+    "feeling_find_product_research.csv": [
+      "id",
+      "product_name",
+      "retailer",
+      "category",
+      "price_observed",
+      "currency",
+      "product_url",
+      "product_image_url",
+      "image_publication_permission",
+      "accessibility_features",
+      "materials_seller_claim",
+      "price_observed_date",
+      "availability",
+      "delivery_to_germany",
+      "source_url",
+      "publication_status",
+      "notes"
+    ]
+  },
+  "counts": {
+    "input_rows": 28,
+    "unique_candidate_records": 28,
+    "duplicate_rows": 0,
+    "with_reported_price_and_currency": 28,
+    "with_direct_format_url_unverified": 18,
+    "with_image_url": 3,
+    "with_reported_accessibility_attributes": 28,
+    "with_observation_date": 16,
+    "requiring_review": 28,
+    "approved_for_import": 0,
+    "currencies": {
+      "EUR": 12,
+      "GBP": 10,
+      "USD": 6
+    }
+  },
+  "duplicates": [],
+  "products": [
+    {
+      "name": "PierreT magnetic dress shirt",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.O 210",
+      "category": null,
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "canonical_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "raw_product_or_source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+      "price": "130.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "magnetic_closure",
+        "one_hand_dressing"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 2,
+          "original": {
+            "product_name": "PierreT magnetic dress shirt",
+            "retailer": "Tamonda",
+            "observed_price_eur": "130.00",
+            "currency": "EUR",
+            "seller_claimed_features": "magnetic_closure;one_hand_dressing",
+            "source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_DE/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.O+210%22",
+            "url_type": "direct_product",
+            "retailer_sku_or_variant": "HE.O 210",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nils side-zip rehabilitation trousers",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.H 80023",
+      "category": null,
+      "product_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "canonical_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "raw_product_or_source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+      "price": "49.95",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "side_zippers",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 3,
+          "original": {
+            "product_name": "Nils side-zip rehabilitation trousers",
+            "retailer": "Tamonda",
+            "observed_price_eur": "49.95",
+            "currency": "EUR",
+            "seller_claimed_features": "side_zippers;easy_dressing",
+            "source_url": "https://tamonda.de/epages/56a26822-db66-4f66-a192-acd0b29a8558.sf/de_LU/?ObjectPath=%2FShops%2F56a26822-db66-4f66-a192-acd0b29a8558%2FProducts%2F%22HE.H+80023%22",
+            "url_type": "direct_product",
+            "retailer_sku_or_variant": "HE.H 80023",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Karma magnetic and zip adaptive trousers",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "DA.H 028",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "raw_product_or_source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "price": "130.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "magnetic_leg_openings",
+        "easy_grip",
+        "side_zippers"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 4,
+          "original": {
+            "product_name": "Karma magnetic and zip adaptive trousers",
+            "retailer": "Tamonda",
+            "observed_price_eur": "130.00",
+            "currency": "EUR",
+            "seller_claimed_features": "magnetic_leg_openings;easy_grip;side_zippers",
+            "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "DA.H 028",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jason adaptive jersey trousers",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.H 130",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "raw_product_or_source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "price": "140.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "hook_loop_fastening",
+        "wide_opening"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 5,
+          "original": {
+            "product_name": "Jason adaptive jersey trousers",
+            "retailer": "Tamonda",
+            "observed_price_eur": "140.00",
+            "currency": "EUR",
+            "seller_claimed_features": "hook_loop_fastening;wide_opening",
+            "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "HE.H 130",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Homer seated-fit trousers",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.H 7173",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "raw_product_or_source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "price": "110.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "high_back_waist",
+        "side_zippers",
+        "seated_fit"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 6,
+          "original": {
+            "product_name": "Homer seated-fit trousers",
+            "retailer": "Tamonda",
+            "observed_price_eur": "110.00",
+            "currency": "EUR",
+            "seller_claimed_features": "high_back_waist;side_zippers;seated_fit",
+            "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "HE.H 7173",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chuck adaptive jeans",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.H 038",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "raw_product_or_source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+      "price": "140.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "easy_grip",
+        "magnetic_leg_openings"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 7,
+          "original": {
+            "product_name": "Chuck adaptive jeans",
+            "retailer": "Tamonda",
+            "observed_price_eur": "140.00",
+            "currency": "EUR",
+            "seller_claimed_features": "easy_grip;magnetic_leg_openings",
+            "source_url": "https://tamonda.de/Pflegemode-Basics/Reha-Hosen",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "HE.H 038",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Moses four-zip rehabilitation trousers",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.H 250",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Kleidung-Herren/Hosen/Reha-Hosen/Herren-Gesundheitshosen",
+      "raw_product_or_source_url": "https://tamonda.de/Kleidung-Herren/Hosen/Reha-Hosen/Herren-Gesundheitshosen",
+      "price": "30.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "four_zip_system",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 8,
+          "original": {
+            "product_name": "Moses four-zip rehabilitation trousers",
+            "retailer": "Tamonda",
+            "observed_price_eur": "30.00",
+            "currency": "EUR",
+            "seller_claimed_features": "four_zip_system;easy_dressing",
+            "source_url": "https://tamonda.de/Kleidung-Herren/Hosen/Reha-Hosen/Herren-Gesundheitshosen",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "HE.H 250",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SusannaT magnetic blouse",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "DA.B 025",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Magic-Magnet",
+      "raw_product_or_source_url": "https://tamonda.de/Magic-Magnet",
+      "price": "140.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "magnetic_closure",
+        "one_hand_dressing"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 9,
+          "original": {
+            "product_name": "SusannaT magnetic blouse",
+            "retailer": "Tamonda",
+            "observed_price_eur": "140.00",
+            "currency": "EUR",
+            "seller_claimed_features": "magnetic_closure;one_hand_dressing",
+            "source_url": "https://tamonda.de/Magic-Magnet",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "DA.B 025",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "JonasT magnetic zipper winter jacket",
+      "brand": null,
+      "retailer": "Tamonda",
+      "sku": "HE.J 500",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://tamonda.de/Magic-Magnet",
+      "raw_product_or_source_url": "https://tamonda.de/Magic-Magnet",
+      "price": "210.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "magnetic_zipper",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 10,
+          "original": {
+            "product_name": "JonasT magnetic zipper winter jacket",
+            "retailer": "Tamonda",
+            "observed_price_eur": "210.00",
+            "currency": "EUR",
+            "seller_claimed_features": "magnetic_zipper;easy_dressing",
+            "source_url": "https://tamonda.de/Magic-Magnet",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "HE.J 500",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AIR LONG Bamboo sensory long sleeve blue",
+      "brand": null,
+      "retailer": "Blusss",
+      "sku": "AIR LONG Bamboo Blue",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "raw_product_or_source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "price": "59.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "tagless",
+        "soft_seams",
+        "sensory_friendly"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 11,
+          "original": {
+            "product_name": "AIR LONG Bamboo sensory long sleeve blue",
+            "retailer": "Blusss",
+            "observed_price_eur": "59.00",
+            "currency": "EUR",
+            "seller_claimed_features": "tagless;soft_seams;sensory_friendly",
+            "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "AIR LONG Bamboo Blue",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AIR TEE sensory t-shirt marine",
+      "brand": null,
+      "retailer": "Blusss",
+      "sku": "AIR TEE Marine",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "raw_product_or_source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "price": "55.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "tagless",
+        "seamless",
+        "sensory_friendly"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 12,
+          "original": {
+            "product_name": "AIR TEE sensory t-shirt marine",
+            "retailer": "Blusss",
+            "observed_price_eur": "55.00",
+            "currency": "EUR",
+            "seller_claimed_features": "tagless;seamless;sensory_friendly",
+            "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "AIR TEE Marine",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SENSE bamboo sensory boxers",
+      "brand": null,
+      "retailer": "Blusss",
+      "sku": "SENSE Bamboo",
+      "category": null,
+      "product_url": null,
+      "canonical_url": null,
+      "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "raw_product_or_source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+      "price": "35.00",
+      "currency": "EUR",
+      "price_observed_date": null,
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "unverified",
+      "features": [
+        "tagless",
+        "soft",
+        "sensory_friendly"
+      ],
+      "material": null,
+      "availability": null,
+      "delivery_to_germany": null,
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing direct product URL",
+        "missing product image",
+        "missing clothing category",
+        "missing price observation date"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_germany_product_candidates.csv",
+          "row": 13,
+          "original": {
+            "product_name": "SENSE bamboo sensory boxers",
+            "retailer": "Blusss",
+            "observed_price_eur": "35.00",
+            "currency": "EUR",
+            "seller_claimed_features": "tagless;soft;sensory_friendly",
+            "source_url": "https://blusss.com/de/collections/sensorisch-freundliche-kleidung-fur-erwachsene",
+            "url_type": "category_page",
+            "retailer_sku_or_variant": "SENSE Bamboo",
+            "image_url": "",
+            "image_usage_permission": "unverified",
+            "data_status": "research_only_not_import_approved"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Estelle Relaxed 3/4 Sleeve Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+      "price": "59",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "100% viscose",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 2,
+          "original": {
+            "id": "FF-RESEARCH-001",
+            "product_name": "Estelle Relaxed 3/4 Sleeve Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "59",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "100% viscose",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/estelle-relaxed-3-4-sleeve-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Carly Classic Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/carly-classic-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/carly-classic-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/carly-classic-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/carly-classic-velcro-brand-fastening-shirt",
+      "price": "59",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 3,
+          "original": {
+            "id": "FF-RESEARCH-002",
+            "product_name": "Carly Classic Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "59",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/carly-classic-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/carly-classic-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gillian Cotton Velcro Fastening Blouse",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "canonical_url": "https://www.theablelabel.com/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/gillian-cotton-velcro-brand-fastening-blouse",
+      "price": "59",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 4,
+          "original": {
+            "id": "FF-RESEARCH-003",
+            "product_name": "Gillian Cotton Velcro Fastening Blouse",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "59",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/gillian-cotton-velcro-brand-fastening-blouse",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/gillian-cotton-velcro-brand-fastening-blouse",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Camilla Cotton Seersucker Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+      "price": "52",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton seersucker (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 5,
+          "original": {
+            "id": "FF-RESEARCH-004",
+            "product_name": "Camilla Cotton Seersucker Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "52",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton seersucker (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/camilla-cotton-seersucker-3-4-sleeve-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chambray Cotton Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/chambray-cotton-velcro-brand-fastening-shirt",
+      "price": "52",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 6,
+          "original": {
+            "id": "FF-RESEARCH-005",
+            "product_name": "Chambray Cotton Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "52",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/chambray-cotton-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/chambray-cotton-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aoife Notch Neck Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+      "price": "55",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 7,
+          "original": {
+            "id": "FF-RESEARCH-006",
+            "product_name": "Aoife Notch Neck Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "55",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/aoife-notch-neck-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tiana Cotton Notch Neck Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "canonical_url": "https://www.theablelabel.com/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+      "price": "39.19",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 8,
+          "original": {
+            "id": "FF-RESEARCH-007",
+            "product_name": "Tiana Cotton Notch Neck Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "39.19",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/tiana-cotton-notch-neck-velcro-brand-fastening-shirt",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Olivia Cotton Oxford Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/olivia-oxford-shirt-pink",
+      "canonical_url": "https://www.theablelabel.com/products/olivia-oxford-shirt-pink",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/olivia-oxford-shirt-pink",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/olivia-oxford-shirt-pink",
+      "price": "37.45",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton oxford (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 9,
+          "original": {
+            "id": "FF-RESEARCH-008",
+            "product_name": "Olivia Cotton Oxford Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "37.45",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/olivia-oxford-shirt-pink",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton oxford (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/olivia-oxford-shirt-pink",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Delores Cotton Jersey Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "canonical_url": "https://www.theablelabel.com/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+      "price": "41.6",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": "cotton jersey (percentage to confirm)",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 10,
+          "original": {
+            "id": "FF-RESEARCH-009",
+            "product_name": "Delores Cotton Jersey Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "41.6",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "cotton jersey (percentage to confirm)",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/delores-cotton-jersey-velcro-brand-fastening-shirt-1",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Imogen Jersey Velcro Fastening Shirt",
+      "brand": null,
+      "retailer": "The Able Label",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/imogen-jersey-shirt-golden-lime",
+      "canonical_url": "https://www.theablelabel.com/products/imogen-jersey-shirt-golden-lime",
+      "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/imogen-jersey-shirt-golden-lime",
+      "raw_product_or_source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/imogen-jersey-shirt-golden-lime",
+      "price": "35.1",
+      "currency": "GBP",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "velcro_fastening",
+        "easy_dressing"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 11,
+          "original": {
+            "id": "FF-RESEARCH-010",
+            "product_name": "Imogen Jersey Velcro Fastening Shirt",
+            "retailer": "The Able Label",
+            "category": "shirts",
+            "price_observed": "35.1",
+            "currency": "GBP",
+            "product_url": "https://www.theablelabel.com/collections/shirts-blouses/products/imogen-jersey-shirt-golden-lime",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "velcro_fastening;easy_dressing",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.theablelabel.com/collections/shirts-blouses/products/imogen-jersey-shirt-golden-lime",
+            "publication_status": "research_only",
+            "notes": "Price as shown on retailer page or shirts collection; VAT-inclusive UK pricing, variant/stock unverified."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Short-Sleeve Everyday Magnetic-Button Shirt for Men",
+      "brand": null,
+      "retailer": "Joe & Bella",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://joeandbella.com/collections/special-needs-adaptive-clothing/products/short-sleeve-everyday-magnetic-button-shirt-for-men?variant=48227420078317",
+      "canonical_url": "https://joeandbella.com/products/short-sleeve-everyday-magnetic-button-shirt-for-men",
+      "source_url": "https://joeandbella.com/collections/special-needs-adaptive-clothing/products/short-sleeve-everyday-magnetic-button-shirt-for-men?variant=48227420078317",
+      "raw_product_or_source_url": "https://joeandbella.com/collections/special-needs-adaptive-clothing/products/short-sleeve-everyday-magnetic-button-shirt-for-men?variant=48227420078317",
+      "price": "78",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "magnetic_closure",
+        "one_hand_dressing"
+      ],
+      "material": "77% polyester; 20% rayon; 3% spandex",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 12,
+          "original": {
+            "id": "FF-RESEARCH-011",
+            "product_name": "Short-Sleeve Everyday Magnetic-Button Shirt for Men",
+            "retailer": "Joe & Bella",
+            "category": "shirts",
+            "price_observed": "78",
+            "currency": "USD",
+            "product_url": "https://joeandbella.com/collections/special-needs-adaptive-clothing/products/short-sleeve-everyday-magnetic-button-shirt-for-men?variant=48227420078317",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "magnetic_closure;one_hand_dressing",
+            "materials_seller_claim": "77% polyester; 20% rayon; 3% spandex",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://joeandbella.com/collections/special-needs-adaptive-clothing/products/short-sleeve-everyday-magnetic-button-shirt-for-men?variant=48227420078317",
+            "publication_status": "research_only",
+            "notes": "Price observed on page Nov 2; price may differ by variant or promotion. Magnetic fastenings: check pacemaker/ICD caution."
+          }
+        }
+      ]
+    },
+    {
+      "name": "HoodEase Magnetic Zip-Up Hoodie",
+      "brand": null,
+      "retailer": "Joe & Bella",
+      "sku": null,
+      "category": "hoodies",
+      "product_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "canonical_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "source_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "raw_product_or_source_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+      "price": "88",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-black-xs-hoodease-the-magnetic-zip-up-hoodie-1254639407.webp?v=1787022129&width=1946",
+      "image_permission": "unverified",
+      "features": [
+        "magnetic_zipper",
+        "one_hand_dressing"
+      ],
+      "material": "95% cotton; 5% spandex",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 13,
+          "original": {
+            "id": "FF-RESEARCH-012",
+            "product_name": "HoodEase Magnetic Zip-Up Hoodie",
+            "retailer": "Joe & Bella",
+            "category": "hoodies",
+            "price_observed": "88",
+            "currency": "USD",
+            "product_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+            "product_image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-black-xs-hoodease-the-magnetic-zip-up-hoodie-1254639407.webp?v=1787022129&width=1946",
+            "image_publication_permission": "unverified",
+            "accessibility_features": "magnetic_zipper;one_hand_dressing",
+            "materials_seller_claim": "95% cotton; 5% spandex",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://joeandbella.com/products/magnetic-zip-up-hoodie-men",
+            "publication_status": "research_only",
+            "notes": "Source image URL retrieved; not licensed for republication. Page showed out-of-stock indication for selected variant; verify variant. Magnetic device warning."
+          }
+        }
+      ]
+    },
+    {
+      "name": "CareZips Men’s Access Pants",
+      "brand": null,
+      "retailer": "Joe & Bella",
+      "sku": null,
+      "category": "trousers",
+      "product_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "canonical_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "source_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "raw_product_or_source_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+      "price": "81",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-slate-grey-s-carezips-men-s-access-pants-1254597671.webp?v=1787005838&width=1946",
+      "image_permission": "unverified",
+      "features": [
+        "waist_to_knee_side_zips",
+        "inseam_zip",
+        "assisted_dressing"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 14,
+          "original": {
+            "id": "FF-RESEARCH-013",
+            "product_name": "CareZips Men’s Access Pants",
+            "retailer": "Joe & Bella",
+            "category": "trousers",
+            "price_observed": "81",
+            "currency": "USD",
+            "product_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+            "product_image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-slate-grey-s-carezips-men-s-access-pants-1254597671.webp?v=1787005838&width=1946",
+            "image_publication_permission": "unverified",
+            "accessibility_features": "waist_to_knee_side_zips;inseam_zip;assisted_dressing",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://joeandbella.com/products/carezips-adaptive-pants-for-men",
+            "publication_status": "research_only",
+            "notes": "Source image URL retrieved; not licensed for republication. Selected listing had sold-out indication; verify."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Everyday Side-Zip Pants for Men",
+      "brand": null,
+      "retailer": "Joe & Bella",
+      "sku": null,
+      "category": "trousers",
+      "product_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "canonical_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "source_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "raw_product_or_source_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+      "price": "81",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-black-s-everyday-side-zip-pants-for-men-1254538922.webp?v=1786993478&width=1946",
+      "image_permission": "unverified",
+      "features": [
+        "full_length_side_zip",
+        "stretch_waistband"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 15,
+          "original": {
+            "id": "FF-RESEARCH-014",
+            "product_name": "Everyday Side-Zip Pants for Men",
+            "retailer": "Joe & Bella",
+            "category": "trousers",
+            "price_observed": "81",
+            "currency": "USD",
+            "product_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+            "product_image_url": "https://joeandbella.com/cdn/shop/files/joe-bella-black-s-everyday-side-zip-pants-for-men-1254538922.webp?v=1786993478&width=1946",
+            "image_publication_permission": "unverified",
+            "accessibility_features": "full_length_side_zip;stretch_waistband",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://joeandbella.com/products/mens-everyday-side-zip-pant",
+            "publication_status": "research_only",
+            "notes": "Source image URL retrieved; not licensed for republication. Availability needs fresh check."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Everyday Magnetic Flannel for Women",
+      "brand": null,
+      "retailer": "Joe & Bella",
+      "sku": null,
+      "category": "shirts",
+      "product_url": "https://joeandbella.com/collections/adaptive-tops/products/everyday-magnetic-flannel-for-women?variant=49277886103789",
+      "canonical_url": "https://joeandbella.com/products/everyday-magnetic-flannel-for-women",
+      "source_url": "https://joeandbella.com/collections/adaptive-tops/products/everyday-magnetic-flannel-for-women?variant=49277886103789",
+      "raw_product_or_source_url": "https://joeandbella.com/collections/adaptive-tops/products/everyday-magnetic-flannel-for-women?variant=49277886103789",
+      "price": "78",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "magnetic_closure",
+        "one_hand_dressing",
+        "roomy_armholes"
+      ],
+      "material": null,
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 16,
+          "original": {
+            "id": "FF-RESEARCH-015",
+            "product_name": "Everyday Magnetic Flannel for Women",
+            "retailer": "Joe & Bella",
+            "category": "shirts",
+            "price_observed": "78",
+            "currency": "USD",
+            "product_url": "https://joeandbella.com/collections/adaptive-tops/products/everyday-magnetic-flannel-for-women?variant=49277886103789",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "magnetic_closure;one_hand_dressing;roomy_armholes",
+            "materials_seller_claim": "",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://joeandbella.com/collections/adaptive-tops/products/everyday-magnetic-flannel-for-women?variant=49277886103789",
+            "publication_status": "research_only",
+            "notes": "Price and features shown on product listing; device magnet caution."
+          }
+        }
+      ]
+    },
+    {
+      "name": "ABLE Signature Crew",
+      "brand": null,
+      "retailer": "ABLE",
+      "sku": null,
+      "category": "sweatshirts",
+      "product_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "canonical_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "source_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "raw_product_or_source_url": "https://www.ableclothing.com/products/able-signature-crew",
+      "price": "23",
+      "currency": "USD",
+      "price_observed_date": "2026-11-02",
+      "price_status": "reported_unverified",
+      "image_url": null,
+      "image_permission": "not_collected",
+      "features": [
+        "pullover",
+        "relaxed_fit",
+        "soft_fleece"
+      ],
+      "material": "80% cotton; 20% recycled polyester",
+      "availability": "unknown",
+      "delivery_to_germany": "unverified",
+      "verification_status": "unverified",
+      "import_status": "review_only",
+      "review_reasons": [
+        "source storage and display rights not established",
+        "product and source claims not independently verified",
+        "missing product image"
+      ],
+      "source_rows": [
+        {
+          "file": "feeling_find_product_research.csv",
+          "row": 17,
+          "original": {
+            "id": "FF-RESEARCH-016",
+            "product_name": "ABLE Signature Crew",
+            "retailer": "ABLE",
+            "category": "sweatshirts",
+            "price_observed": "23",
+            "currency": "USD",
+            "product_url": "https://www.ableclothing.com/products/able-signature-crew",
+            "product_image_url": "",
+            "image_publication_permission": "not_collected",
+            "accessibility_features": "pullover;relaxed_fit;soft_fleece",
+            "materials_seller_claim": "80% cotton; 20% recycled polyester",
+            "price_observed_date": "2026-11-02",
+            "availability": "unknown",
+            "delivery_to_germany": "unverified",
+            "source_url": "https://www.ableclothing.com/products/able-signature-crew",
+            "publication_status": "research_only",
+            "notes": "Comfort preference only; NOT marketed as adaptive or certified sensory-friendly; sale price observed and may change."
+          }
+        }
+      ]
+    }
+  ]
+}

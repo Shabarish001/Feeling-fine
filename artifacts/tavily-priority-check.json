@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-11-02T17:52:05.491Z",
+  "credit_budget": 2,
+  "requests": [
+    {
+      "domain": "zalando.de",
+      "query": "adaptive clothing magnetic shirt elastic waist sensory cotton",
+      "reserved_credits": 1,
+      "status": 200,
+      "reported_credits": 1,
+      "results": [
+        {
+          "url": "https://en.zalando.de/kids-clothing/en-fant",
+          "title": "EN FANT Clothing for kids | ZALANDO"
+        },
+        {
+          "url": "https://www.zalando.de/kinderbekleidung/muesli-by-green-cotton__groesse-92?gender=4",
+          "title": "Müsli Everything fashion for your kid | ZALANDO"
+        },
+        {
+          "url": "http://zalando.de/clothing",
+          "title": "Buy Clothing online | Trendy fashion for everyone | at ZALANDO"
+        },
+        {
+          "url": "https://en.zalando.de/clothing/iuman-intimissimi-uomo",
+          "title": "Buy IUMAN Intimissimi Clothing online | Trendy fashion for everyone | at ZALANDO"
+        },
+        {
+          "url": "https://en.zalando.de/black-friday-clothing/ellesse__size-35",
+          "title": "Ellesse Black Friday 2026 Clothing Size 35 & Fashion Deals | ZALANDO"
+        }
+      ]
+    },
+    {
+      "domain": "primark.com",
+      "query": "adaptive clothing magnetic shirt elastic waist sensory cotton",
+      "reserved_credits": 1,
+      "status": 200,
+      "reported_credits": 1,
+      "results": [
+        {
+          "url": "https://www.primark.com/en-gb/a/inspiration/fashion-trends/adaptive-clothing-guide",
+          "title": "Our Adaptive Clothing Guide | What is Adaptive Clothing? | Primark UK"
+        },
+        {
+          "url": "https://www.primark.com/en-us/a/inspiration/style-trends/adaptive-clothing-guide",
+          "title": "Our Adaptive Clothing Guide | What is Adaptive Clothing? | Primark US"
+        },
+        {
+          "url": "https://www.primark.com/en-ie/a/inspiration/fashion-trends/adaptive-collection",
+          "title": "Our Adaptive Clothing Guide | What is Adaptive Clothing? | Penneys IE"
+        },
+        {
+          "url": "https://www.primark.com/en-ie/a/inspiration/fashion-trends/adaptive-clothing-guide",
+          "title": "Our Adaptive Clothing Guide | What is Adaptive Clothing? | Penneys IE"
+        },
+        {
+          "url": "https://corporate.primark.com/en-gb/a/news/corporate-news/primark-launches-the-uk-high-streets-first-adaptive-swimwear",
+          "title": "Primark launches the UK high street’s first adaptive swimwear as it expands its accessible clothing range in partnership with Victoria Jenkins"
+        }
+      ]
+    }
+  ]
+}

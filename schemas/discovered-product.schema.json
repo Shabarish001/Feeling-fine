@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local research product observation",
+  "description": "Unverified seller claims. This is not permission to publish, ingest, or assert safety.",
+  "type": "object",
+  "required": ["id", "product_url", "name", "brand", "category", "description", "image_urls", "price", "currency", "retailer", "sizes", "colors", "materials", "accessibility_features", "shipping_cost", "delivery_estimate", "availability", "source_evidence", "verification_status", "last_checked_at", "completeness", "restrictions"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type":"string"}, "product_url":{"type":"string","format":"uri"}, "name":{"type":"string"},
+    "brand":{"type":["string","null"]}, "category":{"enum":["tops","shirts","trousers","unknown"]},
+    "description":{"type":["string","null"]}, "image_urls":{"type":"array","items":{"type":"string","format":"uri"}},
+    "price":{"type":["number","null"]}, "currency":{"type":["string","null"]}, "retailer":{"type":"string"},
+    "sizes":{"type":"array","items":{"type":"string"}}, "colors":{"type":"array","items":{"type":"string"}},
+    "materials":{"type":"array","items":{"type":"object","required":["material","percentage"],"properties":{"material":{"type":"string"},"percentage":{"type":"number","minimum":0,"maximum":100}},"additionalProperties":false}},
+    "accessibility_features":{"type":"array","items":{"$ref":"#/$defs/evidence"}}, "source_evidence":{"type":"array","items":{"$ref":"#/$defs/evidence"}},
+    "shipping_cost":{"type":["number","null"]}, "delivery_estimate":{"type":["string","null"]}, "availability":{"enum":["unknown","in_stock","out_of_stock"]},
+    "verification_status":{"const":"seller_reported_unverified"}, "last_checked_at":{"type":"string","format":"date-time"},
+    "completeness":{"type":"object","required":["title","price","image","composition","accessibility_features"],"additionalProperties":false,"properties":{"title":{"type":"boolean"},"price":{"type":"boolean"},"image":{"type":"boolean"},"composition":{"type":"boolean"},"accessibility_features":{"type":"boolean"}}},
+    "restrictions":{"type":"string"}
+  },
+  "$defs":{"evidence":{"type":"object","required":["attribute","evidence_type","evidence_text","source_url","checked_at"],"properties":{"attribute":{"type":"string"},"value":{"type":["boolean","string","number","null"]},"evidence_type":{"const":"unverified_seller_claim"},"evidence_text":{"type":"string","maxLength":200},"source_url":{"type":"string","format":"uri"},"checked_at":{"type":"string","format":"date-time"}},"additionalProperties":false}}
+}

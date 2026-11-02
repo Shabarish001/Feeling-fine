@@ -20,19 +20,20 @@ export default async function Header() {
 
   return (
     <header className="site-header">
-      <div className="header-inner">
+      <div className="header-inner glass glass-regular">
         <Link href="/" className="brand" aria-label="FEELING FIND home">
           <img src="/logo.svg" alt="" />
           <span className="brand-name">FEELING FIND</span>
         </Link>
 
         <nav className="main-nav" aria-label="Main">
-          <NavLink href="/" className="hide-sm">Find clothes</NavLink>
-          <NavLink href="/about">About</NavLink>
+          <NavLink href="/discover">Discover</NavLink>
+          <NavLink href="/search">Stores</NavLink>
+          <NavLink href="/about" className="hide-sm">About</NavLink>
 
           {user ? (
             <form action={signOut}>
-              <button type="submit" className="link-button">Sign Out</button>
+              <button type="submit" className="link-button hide-sm">Sign Out</button>
             </form>
           ) : (
             <NavLink href="/signup" className="hide-sm">Create an Account</NavLink>

@@ -1,0 +1,142 @@
+{
+  "contrast": {
+    "desktop home hero": {
+      "checked": 28,
+      "failures": 0,
+      "minRatio": 5.33,
+      "failed": []
+    },
+    "desktop discover step 1": {
+      "checked": 54,
+      "failures": 0,
+      "minRatio": 4.99,
+      "failed": []
+    },
+    "desktop discover results": {
+      "checked": 34,
+      "failures": 0,
+      "minRatio": 6.25,
+      "failed": []
+    },
+    "desktop stores populated": {
+      "checked": 61,
+      "failures": 0,
+      "minRatio": 6.12,
+      "failed": []
+    },
+    "mobile home hero": {
+      "checked": 15,
+      "failures": 0,
+      "minRatio": 4.92,
+      "failed": []
+    },
+    "mobile discover step 1": {
+      "checked": 30,
+      "failures": 0,
+      "minRatio": 4.58,
+      "failed": []
+    },
+    "mobile stores populated": {
+      "checked": 36,
+      "failures": 2,
+      "minRatio": 1.02,
+      "failed": [
+        {
+          "text": "Fixture Mitte",
+          "ratio": 1.11,
+          "required": 4.5,
+          "large": false
+        },
+        {
+          "text": "2",
+          "ratio": 1.02,
+          "required": 4.5,
+          "large": false
+        }
+      ]
+    },
+    "desktop login": {
+      "checked": 16,
+      "failures": 0,
+      "minRatio": 4.96,
+      "failed": []
+    },
+    "desktop signup": {
+      "checked": 20,
+      "failures": 0,
+      "minRatio": 5.29,
+      "failed": []
+    },
+    "desktop about": {
+      "checked": 21,
+      "failures": 0,
+      "minRatio": 5.09,
+      "failed": []
+    }
+  },
+  "keyboard": {
+    "desktop home": {
+      "stops": 14,
+      "withoutFocusRing": [
+        "TEXTAREA "
+      ]
+    },
+    "desktop discover step 1": {
+      "stops": 30,
+      "withoutFocusRing": []
+    }
+  },
+  "reducedMotion": {
+    "sculptureAnimation": "none",
+    "revealOpacityWithoutScroll": "1",
+    "sculptureAnimationNormal": "sculpt-spin",
+    "journeyOpacityAfterScroll": "1"
+  },
+  "names": {
+    "desktop home": [],
+    "desktop discover step 1": [],
+    "desktop discover results": [],
+    "desktop stores": [],
+    "desktop login": [],
+    "desktop signup": [],
+    "desktop about": []
+  },
+  "states": {
+    "loading": true,
+    "demoCards": 3,
+    "demoLabelled": 3,
+    "badgeTexts": [
+      "DEMO SAMPLE - NOT FOR SALE",
+      "DEMO SAMPLE - NOT FOR SALE",
+      "DEMO SAMPLE - NOT FOR SALE"
+    ],
+    "retailerLinksOnDemo": 0,
+    "noSearchMatchEmpty": true,
+    "errorMessage": true,
+    "storesError": true,
+    "profileRedirect": true
+  },
+  "stores": {
+    "chips": 3,
+    "googlePins": 3,
+    "googlePinsAfterLoad": 3,
+    "mapLoaded": true,
+    "detailTitle": "Fixture Store Kreuzberg (fixture)",
+    "directionsHref": "https://www.google.com/maps/search/?api=1&query=fixture-2",
+    "stockNote": true,
+    "afterNext": "←\n3 of 3\n→",
+    "detailClosed": true,
+    "filteredCount": 1,
+    "mobileSheet": {
+      "x": 23,
+      "y": 246,
+      "w": 344,
+      "h": 355,
+      "vw": 390,
+      "vh": 844
+    },
+    "mobileStripHiddenWhenSheet": true
+  },
+  "overflow": {},
+  "errors": []
+}
