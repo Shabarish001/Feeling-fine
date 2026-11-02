@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FEELING FIND logo">
+  <!-- map pin -->
+  <path d="M32 3C19.3 3 9 13 9 25.6 9 42 32 61 32 61s23-19 23-35.4C55 13 44.7 3 32 3z" fill="#8C4A2F"/>
+  <circle cx="32" cy="25" r="16" fill="#FBF7EE"/>
+  <!-- coat hanger -->
+  <path d="M32 15.5a3 3 0 1 1 3 3c-1.2 0-3 .9-3 2.6v1.4" fill="none" stroke="#3B2F22" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M32 22.5 20.5 30.5c-.9.6-.5 2 .6 2h21.8c1.1 0 1.5-1.4.6-2L32 22.5z" fill="none" stroke="#3B2F22" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- little heart -->
+  <path d="M32 37.8s-4.2-2.6-4.2-5.1c0-1.3 1-2.2 2.1-2.2.9 0 1.6.5 2.1 1.2.5-.7 1.2-1.2 2.1-1.2 1.2 0 2.1.9 2.1 2.2 0 2.5-4.2 5.1-4.2 5.1z" fill="#C46A3F" transform="translate(0 -1)"/>
+</svg>
