@@ -208,6 +208,15 @@
 .preview-line { margin: var(--s-4) 0; padding: 10px 14px; border-radius: var(--r-control); background: #e4f1ea; color: #1f4f38; font-size: .92rem; }
 .preview-line.is-empty { background: var(--clay-soft); color: #5f2f1f; }
 
+.companion-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-5); align-items: start; }
+.companion-messages { max-height: 260px; overflow-y: auto; margin: var(--s-4) 0; }
+.companion-messages p { margin: var(--s-2) 0; overflow-wrap: anywhere; }
+.companion-chat textarea { width: 100%; min-height: 90px; padding: 12px; border: 1px solid #d6c9b8; border-radius: 12px; font: inherit; resize: vertical; }
+.companion-review, .companion-results { margin-top: var(--s-6); }
+.companion-review h3, .companion-results h2 { margin-bottom: var(--s-3); }
+.companion-preferences details { margin: var(--s-4) 0; }
+@media (max-width: 800px) { .companion-layout { grid-template-columns: 1fr; } }
+
 /* ---- Results: active filters, refine panel, honest empty state ---- */
 .filter-chips { list-style: none; margin: 0 0 var(--s-4); padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); }
 .filter-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 6px 6px 12px; border-radius: var(--r-pill); background: var(--ivory-200); color: var(--ink); font-size: .82rem; font-weight: 600; }
