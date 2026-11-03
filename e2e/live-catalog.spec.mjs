@@ -76,7 +76,7 @@ test('3. a real-format listing renders image, price and currency, retailer, date
   await expect(card.getByText(/Fixture Retailer \(test data\)/).first()).toBeVisible();
   await expect(card.getByText(/price observed Nov 1, 2026/)).toBeVisible();
   // Seller claims are labelled, not presented as verified.
-  await expect(card.getByText(/Magnetic Closure · seller claim/)).toBeVisible();
+  await expect(card.getByText(/Magnetic Closure · unverified claim/)).toBeVisible();
   await expect(card.getByText(/Seller-claimed feature \(not independently verified\)/).first()).toBeVisible();
   await expect(card.locator('.badge')).toHaveText(/Catalog listing/i);
   // View at retailer opens the exact listing URL.
@@ -94,7 +94,8 @@ test('4. missing image and link are shown honestly, not invented', async ({ page
   const { data } = await runLive(page, { needs: ['seated'] });
   expect(data.results.map((p) => p.title)).toEqual(['FIXTURE Seated Trouser (test data)']);
   const card = page.locator('.product-card').first();
-  await expect(card.getByText('IMAGE UNAVAILABLE')).toBeAttached();
+  await expect(card.getByText('ILLUSTRATION', { exact: true })).toBeAttached();
+  await expect(card.getByText('Representative illustration, not a photograph of this product.')).toBeVisible();
   await expect(card.getByText(/No direct retailer link has been recorded/)).toBeVisible();
   await expect(card.getByRole('link', { name: /view at retailer/i })).toHaveCount(0);
   await expect(card.getByText('€120.00')).toBeVisible(); // EUR stays EUR
@@ -123,7 +124,7 @@ test('6. personalised ranking and filtering use real product attributes', async 
 
 test('7. hard restrictions are not weakened for live products', async ({ page, browser }) => {
   // A seller claim is not verified evidence, so it cannot satisfy a REQUIRED feature.
-  const required = await runLive(page, { required: ['Easy Fastening'] });
+  const required = await runLive(page, { required: ['Limited Dexterity'] });
   expect(required.data.results).toEqual([]);
   await expect(page.getByRole('heading', { name: 'No matches available' })).toBeVisible();
   await expect(page.getByText(/no documented evidence for the accessibility features you marked as required/i)).toBeVisible();

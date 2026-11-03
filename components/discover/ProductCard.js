@@ -52,7 +52,7 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
         {product.image_url && !demo && !imgFailed ? (
           <img src={product.image_url} alt={product.title} loading="lazy" referrerPolicy="no-referrer" onError={() => setImgFailed(true)} />
         ) : (
-          <GarmentArt category={product.category} label={demo ? 'SAMPLE' : 'IMAGE UNAVAILABLE'} />
+          <GarmentArt category={product.category} label={demo ? 'SAMPLE' : 'ILLUSTRATION'} />
         )}
         <span className={`badge sample-badge ${demo ? 'badge-demo' : 'badge-live'}`}>
           {demo ? 'Demo sample - not for sale' : 'Catalog listing'}
@@ -67,6 +67,11 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
       <div className="product-copy">
         <p className="product-brand">{product.brand || 'Brand unknown'} · {offer?.retailer || 'Retailer unknown'}</p>
         <h3>{product.title}</h3>
+        {!demo && (!product.image_url || imgFailed) && <p className="product-note">Representative illustration, not a photograph of this product.</p>}
+        {!demo && product.verification_status === 'unverified' && <p className="product-note">Research listing: identity and features have not been independently verified. Check the retailer before relying on them.</p>}
+        {!demo && product.description && <p className="product-note">{product.verification_status === 'unverified' ? 'Research summary: ' : ''}{product.description}</p>}
+        {!demo && product.features?.includes('magnetic_closure') && <p className="product-note">Contains magnetic fastenings. Check the retailer's safety guidance if you use an implanted medical device.</p>}
+        {!demo && offer?.stock_status === 'unknown' && <p className="product-note">Availability is unknown; check the retailer.</p>}
         <div className="product-price-row">
           <strong className="product-price">{price}</strong>
           {demo && <small>sample price</small>}
@@ -80,10 +85,10 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
         )}
 
         {product.features?.length > 0 && (
-          <div className="feature-chips" role="group" aria-label={demo ? 'Sample features' : 'Documented features'}>
+          <div className="feature-chips" role="group" aria-label={demo ? 'Sample features' : product.verification_status === 'unverified' ? 'Unverified research features' : 'Documented features'}>
             {product.features.map((f) => (
-              <span key={f} className={`tag ${claimedSet.has(f) ? 'is-claim' : ''}`} title={claimedSet.has(f) ? 'Stated by the seller; not independently verified' : undefined}>
-                {label(f)}{claimedSet.has(f) ? ' · seller claim' : ''}
+              <span key={f} className={`tag ${claimedSet.has(f) ? 'is-claim' : ''}`} title={claimedSet.has(f) ? 'Unverified research claim' : undefined}>
+                {label(f)}{claimedSet.has(f) ? ' · unverified claim' : ''}
               </span>
             ))}
           </div>
@@ -114,7 +119,7 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
         </details>
 
         {!demo && offer?.product_url && (
-          <a className="btn btn-small retailer-link" href={offer.product_url} target="_blank" rel="noopener noreferrer">View at retailer <span aria-hidden="true">↗</span><span className="sr-only"> ({offer.retailer || 'retailer'}, opens in a new tab)</span></a>
+          <a className="btn btn-small retailer-link" href={offer.product_url} target="_blank" rel="noopener noreferrer">{offer.retailer === 'Zalando' ? 'View on Zalando' : 'View at retailer'} <span aria-hidden="true">↗</span><span className="sr-only"> ({offer.retailer || 'retailer'}, opens in a new tab)</span></a>
         )}
         {!demo && !offer?.product_url && <p className="product-note">No direct retailer link has been recorded for this listing.</p>}
 

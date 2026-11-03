@@ -29,7 +29,9 @@ export default function OnboardingWizard() {
   const [savedHard, setSavedHard] = useState({ avoid: [], required: [], custom: '' });
   const [extraRestriction, setExtraRestriction] = useState('');
   const [liveCount, setLiveCount] = useState(null); // products in the live catalog; null until known
+  const [livePreview, setLivePreview] = useState({ status: 'idle', count: null });
   const hasSaved = useRef(false);
+  const previewControl = useRef(null);
 
   const say = (text, kind = 'info') => { setMessage(text); setMessageKind(kind); };
   const demo = p.mode === 'demo';
@@ -52,6 +54,29 @@ export default function OnboardingWizard() {
     }).catch(() => {});
     return () => { active = false; };
   }, []);
+
+  // Preview through the same server graph as the final search. Abort stale requests so old counts
+  // never appear after a user changes a restriction. This never changes or saves their choices.
+  useEffect(() => {
+    if (step !== 2 || p.mode !== 'live' || result) return;
+    const controller = new AbortController();
+    setLivePreview({ status: 'checking', count: null });
+    const timer = setTimeout(async () => {
+      try {
+        const response = await fetch('/api/personal-shopping/recommend', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(p), signal: controller.signal,
+        });
+        const data = await response.json();
+        if (!response.ok || !Number.isInteger(data.diagnostics?.eligible)) throw new Error('Preview unavailable');
+        if (!controller.signal.aborted) setLivePreview({ status: 'ready', count: data.diagnostics.eligible });
+      } catch (error) {
+        if (!controller.signal.aborted) setLivePreview({ status: 'error', count: null });
+      }
+    }, 400);
+    previewControl.current = { controller, timer };
+    return () => { clearTimeout(timer); controller.abort(); if (previewControl.current?.controller === controller) previewControl.current = null; };
+  }, [step, p, result]);
 
   // Real listings are used by default only when the live catalog actually has products. Otherwise: labelled samples.
   useEffect(() => {
@@ -100,6 +125,7 @@ export default function OnboardingWizard() {
     }
   }
   async function run(prefs) {
+    if (previewControl.current) { clearTimeout(previewControl.current.timer); previewControl.current.controller.abort(); }
     setBusy(true); say('');
     try {
       if (consent && account && !(await save(prefs))) return;
@@ -134,7 +160,7 @@ export default function OnboardingWizard() {
       <ResultsView
         result={result} account={account} prefs={p} set={set} toggle={toggle} busy={busy}
         message={message} messageKind={messageKind} liveCount={liveCount}
-        onRerun={rerun} onEdit={() => { setResult(null); setStep(0); say(''); }}
+        onRerun={rerun} onEdit={(nextStep = 0) => { setResult(null); setStep(nextStep); say(''); }}
       />
     );
   }
@@ -178,6 +204,7 @@ export default function OnboardingWizard() {
               {step === 0 && (<>
                 <h2 id="wizard-title">What matters most in your clothes?</h2>
                 <p className="step-lede">Choose any that apply, or none to see everything. You never need to share a diagnosis.</p>
+                <p className="hint">Results can match any of your selected needs. You can mark essential features as required in the last step.</p>
                 <NeedCards groups={NEED_GROUPS} needs={p.needs} selectedIds={selectedIds} coverage={demo ? needCoverage : null} onToggle={toggleNeed} />
                 {demo && <p className="hint coverage-hint">{liveCount === 0 ? 'The live catalog has no products yet, so you will see clearly labelled illustrative samples.' : 'Showing availability in the demo catalog of illustrative samples.'}</p>}
                 {!demo && <p className="hint coverage-hint">Searching the live catalog{liveCount ? ` (${liveCount} product${liveCount === 1 ? '' : 's'})` : ''}. Sample garments are never mixed in.</p>}
@@ -195,7 +222,7 @@ export default function OnboardingWizard() {
                 <Choices title="Must avoid" values={OPTIONS.materials} selected={p.avoid_materials} locked={savedHard.avoid} hints={materialHints} onToggle={(v) => toggle('avoid_materials', v)} />
                 <details className="refine-inline" open={p.required_features.length > 0 || savedHard.required.length > 0}>
                   <summary>Non-negotiable accessibility requirements</summary>
-                  <Choices title="Required accessibility features" hint="Garments without documented evidence of these will not be shown." values={OPTIONS.needs} selected={p.required_features} locked={savedHard.required} onToggle={(v) => toggle('required_features', v)} />
+                  <Choices title="Required accessibility features" hint="Every selected feature must be documented for the same garment; other garments will not be shown." values={OPTIONS.needs} selected={p.required_features} locked={savedHard.required} onToggle={(v) => toggle('required_features', v)} />
                 </details>
                 <label className="discover-label">Another material or restriction <span>Optional</span>
                   <input maxLength={300} value={extraRestriction} onChange={(e) => setExtra(e.target.value)} placeholder="e.g. a fabric that irritates your skin" />
@@ -208,6 +235,14 @@ export default function OnboardingWizard() {
                     {preview === 0
                       ? 'Nothing in the sample catalog fits this combination yet. You can still continue, and we will explain why.'
                       : `About ${preview} sample garment${preview === 1 ? '' : 's'} fit what you have chosen.`}
+                  </p>
+                )}
+                {!demo && livePreview.status !== 'idle' && (
+                  <p className={`preview-line ${livePreview.status === 'ready' && livePreview.count === 0 ? 'is-empty' : ''}`} role="status" aria-live="polite">
+                    {livePreview.status === 'checking' ? 'Checking the catalog for your choices…'
+                      : livePreview.status === 'error' ? 'Could not check the catalog yet. You can still search.'
+                      : livePreview.count === 0 ? 'No catalog products currently match all your required choices. Review them if you wish; nothing will be changed automatically.'
+                      : `${livePreview.count} catalog product${livePreview.count === 1 ? '' : 's'} match your current choices.`}
                   </p>
                 )}
                 {account ? (<>

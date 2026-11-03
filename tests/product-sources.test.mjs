@@ -8,6 +8,10 @@ const clock=()=>new Date('2026-11-02T00:00:00Z');
 const awinData=await readFile(new URL('./fixtures/product-sources/awin.jsonl',import.meta.url),'utf8');
 const ebayData=JSON.parse(await readFile(new URL('./fixtures/product-sources/ebay.json',import.meta.url),'utf8'));
 const queries=['adaptive magnetic shirt','sensory soft cotton','easy dressing trousers'];
+test('Awin requests the feed with an accepted response media range',async()=>{
+ let options;const adapter=new AwinFeedAdapter({publisherId:'1',advertiserId:'2',token:'fixture',fetchImpl:async(_url,opts)=>{options=opts;return new Response(awinData);}});
+ await adapter.loadFeed();assert.equal(options.headers.Accept,'*/*');
+});
 test('Awin fixture search maps matching product, source provenance, price and feature',async()=>{
  const adapter=new AwinFeedAdapter({publisherId:'1',advertiserId:'2',token:'fixture',fixture:true,clock,fetchImpl:async()=>new Response(awinData)});
  const rows=await adapter.search({query:queries[0]});assert.equal(rows.length,1);const x=rows[0];assert.equal(x.source.fixture,true);assert.equal(x.product.price,49);assert.equal(x.product.currency,'EUR');assert.equal(x.product.shipping_cost,4);assert.equal(x.product.materials[0].percentage,100);assert.equal(x.product.accessibility_features[0].evidence_type,'unverified_seller_claim');assert.equal(x.product.verification_status,'seller_reported_unverified');
