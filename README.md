@@ -1,4 +1,4 @@
-# FEELING FIND
+# FEELING FIND - https://feeling-fine.vercel.app/ (website-link)
 
 A TripAdvisor-style finder for adaptive clothing. People describe what they need in a chat, Claude searches the clothing catalogue, and the results show up as numbered pins on a map with a detail card for each item.
 
