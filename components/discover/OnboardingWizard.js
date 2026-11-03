@@ -10,7 +10,7 @@ import { NeedCards, CategoryCards } from './OptionCards';
 import ResultsView from './ResultsView';
 import { LoadingEdit, SkeletonGrid } from './LoadingEdit';
 import FabricSculpture from '@/components/ui/FabricSculpture';
-import FitCompanion from './FitCompanion';
+import PersonalAgentComingSoon from './PersonalAgentComingSoon';
 
 const STEPS = ['Needs', 'Category', 'Restrictions'];
 const CATEGORIES = ['all', ...OPTIONS.categories.filter((c) => c !== 'all')];
@@ -157,7 +157,7 @@ export default function OnboardingWizard() {
     return [m, demo ? (n === 0 ? 'Cannot be verified in the sample catalog' : `${n} sample products verify this`) : ''];
   }));
 
-  if (companion) return <FitCompanion initial={p} account={account} onClose={() => setCompanion(false)} />;
+  if (companion) return <PersonalAgentComingSoon onClose={() => setCompanion(false)} />;
 
   if (result) {
     return (
@@ -176,7 +176,7 @@ export default function OnboardingWizard() {
           <p className="eyebrow">Feeling Find · Personal edit</p>
           <h1>Wear what<br /><em>feels right.</em></h1>
           <p className="intro-lede">Three short questions. Your kind of style comes next, once you can see what is available.</p>
-          <button type="button" className="discover-button" onClick={() => setCompanion(true)}>Talk to my Fit Companion</button>
+          <button type="button" className="discover-button" onClick={() => setCompanion(true)}>Personal agent · Coming soon</button>
           <div className="editorial-art" aria-hidden="true"><FabricSculpture /></div>
           <p className="intro-small">No diagnosis needed. Explore as a guest, or save your choices to your account.</p>
         </aside>

@@ -217,6 +217,24 @@
 .companion-preferences details { margin: var(--s-4) 0; }
 @media (max-width: 800px) { .companion-layout { grid-template-columns: 1fr; } }
 
+/* ---- Personal agent preview ---- */
+.agent-preview { max-width: 1100px; }
+.agent-preview-hero { max-width: 760px; padding: var(--s-6) 0 var(--s-7); }
+.agent-preview-badge { display: inline-flex; padding: 7px 14px; margin-bottom: var(--s-5); border-radius: var(--r-pill); background: var(--lavender-100); color: var(--lavender-800); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.agent-preview-hero h1 { margin-bottom: var(--s-4); }
+.agent-preview-lede { max-width: 650px; color: var(--ink-soft); font-size: clamp(1.05rem, 2vw, 1.25rem); }
+.agent-preview-details { padding: var(--s-6); border: 1px solid rgb(221 210 191 / .7); border-radius: var(--r-sheet); background: var(--ivory-50); box-shadow: var(--shadow-2); }
+.agent-preview-details h2 { margin-bottom: var(--s-5); }
+.agent-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-3); }
+.agent-preview-card { padding: var(--s-5); border: 1px solid var(--sand-300); border-radius: var(--r-card); background: #fff; }
+.agent-preview-number { display: block; margin-bottom: var(--s-4); color: var(--lavender-600); font: 600 1rem var(--font-display); }
+.agent-preview-card h3 { margin-bottom: var(--s-2); }
+.agent-preview-card p { margin-bottom: 0; color: var(--ink-soft); font-size: .94rem; }
+.agent-preview-note { margin: var(--s-5) 0; padding-left: var(--s-3); border-left: 2px solid var(--lavender-400); color: var(--ink-soft); }
+.agent-preview-actions { display: flex; align-items: center; gap: var(--s-4); flex-wrap: wrap; padding-top: var(--s-5); border-top: 1px solid var(--ivory-200); }
+.agent-preview-actions span { color: var(--ink-soft); font-size: .9rem; }
+@media (max-width: 760px) { .agent-preview-grid { grid-template-columns: 1fr; } .agent-preview-hero { padding: var(--s-3) 0 var(--s-5); } .agent-preview-details { padding: var(--s-5) var(--s-4); } }
+
 /* ---- Results: active filters, refine panel, honest empty state ---- */
 .filter-chips { list-style: none; margin: 0 0 var(--s-4); padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); }
 .filter-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 6px 6px 12px; border-radius: var(--r-pill); background: var(--ivory-200); color: var(--ink); font-size: .82rem; font-weight: 600; }
