@@ -54,9 +54,7 @@ main { flex: 1; width: 100%; }
 }
 .brand { display: flex; align-items: center; flex-shrink: 0; text-decoration: none; color: var(--ink); }
 .brand img {
-  display: block; width: 210px; height: 48px; object-fit: cover; object-position: center;
-  border: 1px solid rgb(119 157 76 / .22); border-radius: var(--r-pill);
-  box-shadow: 0 2px 8px rgb(59 47 34 / .08); mix-blend-mode: multiply;
+  display: block; width: 210px; height: 48px; object-fit: contain; object-position: center;
 }
 .main-nav { display: flex; gap: 2px; margin-left: auto; align-items: center; }
 .main-nav a.nav-link, .link-button {

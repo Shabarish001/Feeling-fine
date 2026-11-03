@@ -22,7 +22,7 @@ export default async function Header() {
     <header className="site-header">
       <div className="header-inner glass glass-regular">
         <Link href="/" className="brand" aria-label="FEELING FINE home">
-          <img src="/feeling-fine-logo.jpeg" alt="" width="1600" height="900" />
+          <img src="/logo.png" alt="" width="2172" height="724" />
         </Link>
 
         <nav className="main-nav" aria-label="Main">
