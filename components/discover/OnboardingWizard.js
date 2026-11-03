@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { defaults, OPTIONS } from '@/lib/personal-shopping/schema.mjs';
 import { demoCatalog } from '@/lib/personal-shopping/demo-catalog.mjs';
-import { NEED_GROUPS, groupSelected, toggleGroup, groupCoverage, categoryCounts, materialCoverage, previewCount } from '@/lib/personal-shopping/needs.mjs';
+import { NEED_GROUPS, groupSelected, toggleGroup, groupCoverage, categoryCounts, previewCount } from '@/lib/personal-shopping/needs.mjs';
 import { savedRefinements, optionalDefaults } from '@/lib/personal-shopping/explain.mjs';
 import Choices from './Choices';
 import { NeedCards, CategoryCards } from './OptionCards';
@@ -152,10 +152,6 @@ export default function OnboardingWizard() {
   const selectedIds = NEED_GROUPS.filter((g) => groupSelected(p.needs, g)).map((g) => g.id);
   const preview = demo ? previewCount(demoCatalog, p) : null;
   const refinements = savedRefinements(p);
-  const materialHints = Object.fromEntries(OPTIONS.materials.map((m) => {
-    const n = materialCoverage(demoCatalog, m);
-    return [m, demo ? (n === 0 ? 'Cannot be verified in the sample catalog' : `${n} sample products verify this`) : ''];
-  }));
 
   if (companion) return <FitCompanion initial={p} account={account} onClose={() => setCompanion(false)} />;
 
@@ -224,7 +220,7 @@ export default function OnboardingWizard() {
               {step === 2 && (<>
                 <h2 id="wizard-title">Anything we must avoid or always include?</h2>
                 <p className="step-lede">These are hard rules. We never relax them, and anything not documented counts as unknown, not safe.</p>
-                <Choices title="Must avoid" values={OPTIONS.materials} selected={p.avoid_materials} locked={savedHard.avoid} hints={materialHints} onToggle={(v) => toggle('avoid_materials', v)} />
+                {p.avoid_materials.length > 0 && <p className="hint">Your material restrictions remain active: {p.avoid_materials.map(m => m.replaceAll('_', ' ')).join(', ')}. You can delete saved shopping preferences below; this session keeps its current choices until you start a new one.</p>}
                 <Choices title="Fastenings to avoid" hint="A garment must explicitly document that the fastening is absent." values={OPTIONS.avoidFeatures} selected={p.avoid_features} locked={savedHard.avoidFeatures} onToggle={(v) => toggle('avoid_features', v)} />
                 <details className="refine-inline" open={p.required_features.length > 0 || savedHard.required.length > 0}>
                   <summary>Non-negotiable accessibility requirements</summary>

@@ -38,7 +38,7 @@ test('research records are labeled and stock is not presented as confirmed',asyn
   await expect(research.first().getByText(/unverified claim/).first()).toBeVisible();
 });
 
-test('an empty polyester-restricted search opens material choices without changing them',async({page})=>{
+test('material checkboxes are not shown in the onboarding flow',async({page})=>{
   await page.route('**/api/personal-shopping/preferences',r=>r.fulfill({status:401,json:{error:'Guest'}}));
   await page.goto('/discover');
   await expect(page.getByText(/Searching the live catalog/)).toBeVisible();
@@ -46,14 +46,7 @@ test('an empty polyester-restricted search opens material choices without changi
   await page.getByRole('checkbox',{name:/Sensory-friendly and soft/}).check();
   await page.getByRole('button',{name:/continue/i}).click();
   await page.getByRole('button',{name:/continue/i}).click();
-  await page.getByRole('group',{name:'Must avoid'}).getByLabel('Polyester').check();
-  await page.getByRole('button',{name:/show my matches/i}).click();
-  await expect(page.getByRole('heading',{name:'No matches available'})).toBeVisible();
-  await expect(page.getByText(/could not be confirmed free of the materials you must avoid/i)).toBeVisible();
-  await page.getByRole('button',{name:'Review material choices'}).click();
-  const polyester=page.getByRole('group',{name:'Must avoid'}).getByLabel('Polyester');
-  await expect(polyester).toBeChecked();
-  await polyester.uncheck();
+  await expect(page.getByRole('group',{name:'Must avoid'})).toHaveCount(0);
   await page.getByRole('button',{name:/show my matches/i}).click();
   await expect(page.locator('.product-card').first()).toBeVisible();
 });

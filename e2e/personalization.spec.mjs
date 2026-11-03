@@ -5,18 +5,27 @@ const SHOTS = 'artifacts/onboarding-fix';
 const nodes = ['loadUserPreferences', 'interpretClothingNeeds', 'retrieveProducts', 'verifyRestrictions', 'rankProducts', 'explainRecommendations'];
 const NEED = { easy: /Easy dressing and fastenings/, sensory: /Sensory-friendly and soft/, seated: /Seated comfort and accessible fit/ };
 
-async function guest(page) { await page.route('**/api/personal-shopping/preferences', (route) => route.fulfill({ status: 401, json: { error: 'Guest' } })); }
+async function guest(page, avoid = []) {
+  await page.route('**/api/personal-shopping/catalog-status', route=>route.fulfill({json:{live_products:0}}));
+  await page.route('**/api/personal-shopping/preferences', route => avoid.length
+    ? route.fulfill({status:200,json:{preferences:{mode:'demo',avoid_materials:avoid.map(x=>x.toLowerCase())}}})
+    : route.fulfill({ status: 401, json: { error: 'Guest' } }));
+}
 const next = (page) => page.getByRole('button', { name: /continue/i }).click();
 
 // Walks the three steps. `category` is the card title; omit for "Explore all compatible clothing".
 async function onboard(page, o = {}) {
-  if (o.testUser) await page.setExtraHTTPHeaders({ 'x-e2e-user': o.testUser }); else if (!o.keepRoutes) await guest(page);
+  if (o.testUser) {
+    await page.setExtraHTTPHeaders({ 'x-e2e-user': o.testUser });
+    await page.route('**/api/personal-shopping/catalog-status', route=>route.fulfill({json:{live_products:0}}));
+    if(o.avoid?.length) await page.request.put('/api/personal-shopping/preferences',{headers:{'x-e2e-user':o.testUser},data:{consent:true,preferences:{mode:'demo',avoid_materials:o.avoid.map(x=>x.toLowerCase())}}});
+  } else if (!o.keepRoutes) await guest(page, o.avoid || []);
   await page.goto('/discover');
+  if(o.avoid?.length) await expect(page.getByText('Your saved shopping preferences are loaded.')).toBeVisible();
   for (const n of o.needs || []) await page.getByRole('checkbox', { name: NEED[n] }).check();
   await next(page);
   if (o.category) await page.getByRole('radio', { name: new RegExp(`^${o.category}`) }).check();
   await next(page);
-  if (o.avoid) for (const m of o.avoid) await page.getByRole('group', { name: 'Must avoid' }).getByLabel(m).check();
   if (o.required) {
     await page.getByText('Non-negotiable accessibility requirements').click();
     for (const f of o.required) await page.getByRole('group', { name: 'Required accessibility features' }).getByLabel(f).check();
@@ -130,7 +139,7 @@ test('7. returning to onboarding preserves chosen restrictions and needs', async
   await page.getByRole('button', { name: /change my answers/i }).first().click();
   await expect(page.getByRole('checkbox', { name: NEED.sensory })).toBeChecked();
   await next(page); await next(page);
-  await expect(page.getByRole('group', { name: 'Must avoid' }).getByLabel('Wool')).toBeChecked();
+  await expect(page.getByText(/material restrictions remain active: wool/i)).toBeVisible();
   await expect(page.getByRole('group', { name: 'Required accessibility features' }).getByLabel('Tag Free')).toBeChecked();
 });
 
@@ -212,7 +221,7 @@ test('currency must match the budget and is never converted', async ({ page }) =
 });
 
 test('live catalog without data stays empty and never substitutes samples', async ({ page }) => {
-  await onboard(page, { needs: ['easy'] });
+  await onboard(page, { testUser:'empty-catalog', needs: ['easy'] });
   await page.getByText('Refine preferences').click();
   await page.getByLabel('Catalog source').selectOption('live');
   const response = page.waitForResponse((r) => r.url().includes('/api/personal-shopping/recommend'));
@@ -249,10 +258,8 @@ test('saved hard restrictions stay locked and saved optional refinements are vis
   await second.getByRole('button', { name: 'Clear them' }).click();
   await expect(second.getByText(/Saved refinements will also apply/)).toHaveCount(0);
   await next(second); await next(second);
-  // The saved hard restriction is shown, checked and locked.
-  const wool = second.getByRole('group', { name: 'Must avoid' }).getByLabel('Wool');
-  await expect(wool).toBeChecked();
-  await expect(wool).toBeDisabled();
+  // The saved hard restriction is still disclosed and enforced.
+  await expect(second.getByText(/material restrictions remain active: wool/i)).toBeVisible();
   const { data } = await submit(second);
   expect(data.results.length).toBeGreaterThan(0);
   expect(data.results.every((p) => p.evidence.some((e) => e.attribute === 'wool' && e.value === 'absent'))).toBeTruthy();
@@ -278,7 +285,7 @@ test('isolated feedback changes future ranking and preferences survive a new bro
   await next(second);
   await expect(second.getByRole('radio', { name: /^Shirts/ })).toBeChecked();
   await next(second);
-  await expect(second.getByRole('group', { name: 'Must avoid' }).getByLabel('Wool')).toBeChecked();
+  await expect(second.getByText(/material restrictions remain active: wool/i)).toBeVisible();
   const { data } = await submit(second);
   expect(data.results[0].title).toContain('Soft Seam');
   expect(data.results.every((p) => p.evidence.some((e) => e.attribute === 'wool' && e.value === 'absent'))).toBeTruthy();

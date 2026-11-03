@@ -7,9 +7,11 @@ const SHOTS = 'artifacts/real-catalog';
 const FIXTURE = 'https://fixtures.feelingfind.test';
 const SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="420"><rect width="400" height="420" fill="#c9b8e8"/><text x="200" y="215" text-anchor="middle" font-size="26" fill="#3f3366">FIXTURE PHOTO</text></svg>';
 
-async function useFixtures(page) {
+async function useFixtures(page, avoid = []) {
   await page.setExtraHTTPHeaders({ 'x-e2e-catalog': 'fixture' });
-  await page.route('**/api/personal-shopping/preferences', (r) => r.fulfill({ status: 401, json: { error: 'Guest' } }));
+  await page.route('**/api/personal-shopping/preferences', (r) => avoid.length
+    ? r.fulfill({ status: 200, json: { preferences: { mode: 'live', avoid_materials: avoid.map(x=>x.toLowerCase()) } } })
+    : r.fulfill({ status: 401, json: { error: 'Guest' } }));
   // The fixture host is reserved (.test) and never reached: its image and retailer page are served here.
   await page.context().route(`${FIXTURE}/**`, (route) => {
     const url = route.request().url();
@@ -19,13 +21,12 @@ async function useFixtures(page) {
 }
 const next = (page) => page.getByRole('button', { name: /continue/i }).click();
 async function runLive(page, o = {}) {
-  await useFixtures(page);
+  await useFixtures(page, o.avoid || []);
   await page.goto('/discover');
   await expect(page.getByText(/Searching the live catalog \(3 products\)/)).toBeVisible();
   const need = { easy: /Easy dressing and fastenings/, sensory: /Sensory-friendly and soft/, seated: /Seated comfort and accessible fit/ };
   for (const n of o.needs || []) await page.getByRole('checkbox', { name: need[n] }).check();
   await next(page); await next(page);
-  for (const m of o.avoid || []) await page.getByRole('group', { name: 'Must avoid' }).getByLabel(m).check();
   if (o.required) {
     await page.getByText('Non-negotiable accessibility requirements').click();
     for (const f of o.required) await page.getByRole('group', { name: 'Required accessibility features' }).getByLabel(f).check();

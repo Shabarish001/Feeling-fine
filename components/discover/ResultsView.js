@@ -133,7 +133,7 @@ export default function ResultsView({ result, account, prefs, set, toggle, busy,
               <p>There may be no catalog products with enough evidence for your requirements. Your restrictions have not been relaxed.</p>
               <ul className="empty-reasons">{empty.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
               {result.diagnostics?.filters?.some((f) => f.filter === 'avoid_materials' && f.excluded > 0 && f.remaining === 0) && (
-                <p>You can review your material choices. We will keep them unless you choose to change them.</p>
+                <p>Your material restrictions remain active. Review your saved preferences to change them.</p>
               )}
               {result.diagnostics?.filters?.some((f) => f.filter === 'required_features' && f.excluded > 0 && f.remaining === 0) && (
                 <p>Every feature you marked as required must be documented for the same garment. Missing evidence does not necessarily mean the garment lacks the feature.</p>
@@ -141,7 +141,7 @@ export default function ResultsView({ result, account, prefs, set, toggle, busy,
               <div className="empty-actions">
                 {empty.actions.map((a) => <button key={a.id} className="discover-button" onClick={() => onRerun(a.patch)}>{a.label}</button>)}
                 {result.diagnostics?.filters?.some((f) => f.filter === 'avoid_materials' && f.excluded > 0 && f.remaining === 0) && (
-                  <button type="button" className="discover-button" onClick={() => onEdit(2)}>Review material choices</button>
+                  <button type="button" className="discover-button" onClick={() => onEdit(2)}>Review saved restrictions</button>
                 )}
                 {result.diagnostics?.filters?.some((f) => f.filter === 'required_features' && f.excluded > 0 && f.remaining === 0) && (
                   <button type="button" className="discover-button" onClick={() => onEdit(2)}>Review required features</button>
