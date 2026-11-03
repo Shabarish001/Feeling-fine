@@ -22,8 +22,7 @@ export default async function Header() {
     <header className="site-header">
       <div className="header-inner glass glass-regular">
         <Link href="/" className="brand" aria-label="FEELING FIND home">
-          <img src="/logo.svg" alt="" />
-          <span className="brand-name">FEELING FIND</span>
+          <img src="/feeling-fine-logo.jpeg" alt="" width="1600" height="900" />
         </Link>
 
         <nav className="main-nav" aria-label="Main">

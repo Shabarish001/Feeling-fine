@@ -5,8 +5,10 @@
 .discover-intro { position: sticky; top: calc(var(--header-h) + var(--s-5)); padding-top: var(--s-4); }
 .discover-intro h1 { font-weight: 400; letter-spacing: -.025em; margin-bottom: var(--s-4); }
 .intro-lede { color: var(--ink-soft); font-size: 1.1rem; max-width: 26rem; }
-.editorial-art { display: grid; place-items: center; margin: var(--s-4) 0; }
+.editorial-art { display: grid; place-items: center; margin: calc(-1 * var(--s-3)) 0 var(--s-7); }
 .editorial-art .sculpture { width: min(100%, 320px); }
+/* The 3D ribbons extend past the sculpture box; scale them so they stay inside the space reserved for them. */
+.editorial-art .sculpture-stage { scale: .8; }
 .intro-small { font-size: .9rem; color: var(--ink-soft); border-left: 2px solid var(--lavender-400); padding-left: var(--s-3); max-width: 24rem; }
 
 /* ---- Wizard card (solid content surface; glass is reserved for floating UI) ---- */

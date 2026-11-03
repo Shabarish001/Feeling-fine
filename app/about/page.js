@@ -7,7 +7,7 @@ export const metadata = { title: "About — FEELING FIND" };
 const VALUES = [
   {
     title: "Made with the community",
-    text: "Our reviews and recommendations come from disabled people, carers and adaptive designers — the people who know what really works.",
+    text: "Our reviews and recommendations come from people with visible and invisible disabilities, carers and adaptive designers — the people who know what really works.",
   },
   {
     title: "Style without compromise",
@@ -26,8 +26,8 @@ export default function AboutPage() {
         <p className="eyebrow">About Feeling Find</p>
         <h1>Fashion that <em>fits your life.</em></h1>
         <p className="lead">
-          We help disabled people and their families find adaptive clothing — and the shops that sell it — by simply
-          describing what they need.
+          We help people with visible and invisible disabilities find adaptive clothing by simply describing what they
+          need.
         </p>
       </section>
 
