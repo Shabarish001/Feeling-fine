@@ -10,6 +10,7 @@ import { NeedCards, CategoryCards } from './OptionCards';
 import ResultsView from './ResultsView';
 import { LoadingEdit, SkeletonGrid } from './LoadingEdit';
 import FabricSculpture from '@/components/ui/FabricSculpture';
+import FitCompanion from './FitCompanion';
 
 const STEPS = ['Needs', 'Category', 'Restrictions'];
 const CATEGORIES = ['all', ...OPTIONS.categories.filter((c) => c !== 'all')];
@@ -18,6 +19,7 @@ const joinText = (...parts) => [...new Set(parts.flatMap((x) => String(x || '').
 export default function OnboardingWizard() {
   const [p, setP] = useState({ ...defaults });
   const [step, setStep] = useState(0);
+  const [companion, setCompanion] = useState(false);
   const [result, setResult] = useState(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
@@ -26,7 +28,7 @@ export default function OnboardingWizard() {
   const [saved, setSaved] = useState(false);
   const [consent, setConsent] = useState(false);
   // Hard restrictions saved earlier. They stay on (the server also keeps them) until saved preferences are deleted.
-  const [savedHard, setSavedHard] = useState({ avoid: [], required: [], custom: '' });
+  const [savedHard, setSavedHard] = useState({ avoid: [], avoidFeatures: [], required: [], custom: '' });
   const [extraRestriction, setExtraRestriction] = useState('');
   const [liveCount, setLiveCount] = useState(null); // products in the live catalog; null until known
   const [livePreview, setLivePreview] = useState({ status: 'idle', count: null });
@@ -46,7 +48,7 @@ export default function OnboardingWizard() {
       if (!r.ok) { say(d.error, 'error'); return; }
       if (d.preferences) {
         setP({ ...defaults, ...d.preferences });
-        setSavedHard({ avoid: d.preferences.avoid_materials || [], required: d.preferences.required_features || [], custom: d.preferences.custom_restrictions || '' });
+        setSavedHard({ avoid: d.preferences.avoid_materials || [], avoidFeatures: d.preferences.avoid_features || [], required: d.preferences.required_features || [], custom: d.preferences.custom_restrictions || '' });
         setSaved(true);
         hasSaved.current = true;
         say('Your saved shopping preferences are loaded.');
@@ -121,7 +123,7 @@ export default function OnboardingWizard() {
     say(r.ok ? 'Saved shopping preferences deleted.' : d.error, r.ok ? 'info' : 'error');
     if (r.ok) {
       setSaved(false); setConsent(false);
-      setSavedHard({ avoid: [], required: [], custom: '' });
+      setSavedHard({ avoid: [], avoidFeatures: [], required: [], custom: '' });
     }
   }
   async function run(prefs) {
@@ -155,6 +157,8 @@ export default function OnboardingWizard() {
     return [m, demo ? (n === 0 ? 'Cannot be verified in the sample catalog' : `${n} sample products verify this`) : ''];
   }));
 
+  if (companion) return <FitCompanion initial={p} account={account} onClose={() => setCompanion(false)} />;
+
   if (result) {
     return (
       <ResultsView
@@ -172,6 +176,7 @@ export default function OnboardingWizard() {
           <p className="eyebrow">Feeling Find · Personal edit</p>
           <h1>Wear what<br /><em>feels right.</em></h1>
           <p className="intro-lede">Three short questions. Your kind of style comes next, once you can see what is available.</p>
+          <button type="button" className="discover-button" onClick={() => setCompanion(true)}>Talk to my Fit Companion</button>
           <div className="editorial-art" aria-hidden="true"><FabricSculpture /></div>
           <p className="intro-small">No diagnosis needed. Explore as a guest, or save your choices to your account.</p>
         </aside>
@@ -220,6 +225,7 @@ export default function OnboardingWizard() {
                 <h2 id="wizard-title">Anything we must avoid or always include?</h2>
                 <p className="step-lede">These are hard rules. We never relax them, and anything not documented counts as unknown, not safe.</p>
                 <Choices title="Must avoid" values={OPTIONS.materials} selected={p.avoid_materials} locked={savedHard.avoid} hints={materialHints} onToggle={(v) => toggle('avoid_materials', v)} />
+                <Choices title="Fastenings to avoid" hint="A garment must explicitly document that the fastening is absent." values={OPTIONS.avoidFeatures} selected={p.avoid_features} locked={savedHard.avoidFeatures} onToggle={(v) => toggle('avoid_features', v)} />
                 <details className="refine-inline" open={p.required_features.length > 0 || savedHard.required.length > 0}>
                   <summary>Non-negotiable accessibility requirements</summary>
                   <Choices title="Required accessibility features" hint="Every selected feature must be documented for the same garment; other garments will not be shown." values={OPTIONS.needs} selected={p.required_features} locked={savedHard.required} onToggle={(v) => toggle('required_features', v)} />

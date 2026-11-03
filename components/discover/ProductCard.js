@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import GarmentArt from '@/components/ui/GarmentArt';
+import { evidenceFor } from '@/lib/personal-shopping/matching.mjs';
 
 const label = (s) => s.replaceAll('_', ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 const SCORE_LABELS = [
@@ -14,7 +15,7 @@ const SCORE_LABELS = [
 const signed = (n) => (n > 0 ? `+${n}` : String(n));
 
 // One recommended product. Demo samples are visually distinct (dashed badge, illustrated art, "sample" labels).
-export default function ProductCard({ product, demo, account, testFeedback, avoided = [] }) {
+export default function ProductCard({ product, demo, account, testFeedback, avoided = [], onSessionDismiss }) {
   const offer = product.offers?.[0];
   const [reason, setReason] = useState('');
   const [status, setStatus] = useState('');
@@ -23,7 +24,7 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
   const [imgFailed, setImgFailed] = useState(false);
   const canGiveFeedback = (!demo || testFeedback) && account;
   // Only exclusions this garment actually documents; undocumented is unknown, never "free of".
-  const confirmedFree = avoided.filter((m) => product.evidence?.some((e) => e.attribute === m && e.value === 'absent'));
+  const confirmedFree = avoided.filter((m) => evidenceFor(product, m, 'absent', demo, offer));
 
   async function feedback(action) {
     if (action === 'not_for_me' && !reason.trim()) { setStatus('Add a reason first.'); return; }
@@ -105,6 +106,9 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
             </ul>
           </div>
         )}
+        {!demo && product.match_evidence?.some(e => e.source_url) && (
+          <p className="product-note">Product evidence: {[...new Map(product.match_evidence.filter(e => e.source_url).map(e => [e.attribute, e])).values()].map((e, i) => <span key={e.attribute}>{i > 0 ? ' · ' : ''}<a href={e.source_url} target="_blank" rel="noopener noreferrer">{label(e.attribute)} source</a></span>)}</p>
+        )}
 
         {product.unknowns?.length > 0 && <p className="product-note">Unknown: {product.unknowns.join('; ')}.</p>}
 
@@ -122,6 +126,8 @@ export default function ProductCard({ product, demo, account, testFeedback, avoi
           <a className="btn btn-small retailer-link" href={offer.product_url} target="_blank" rel="noopener noreferrer">{offer.retailer === 'Zalando' ? 'View on Zalando' : 'View at retailer'} <span aria-hidden="true">↗</span><span className="sr-only"> ({offer.retailer || 'retailer'}, opens in a new tab)</span></a>
         )}
         {!demo && !offer?.product_url && <p className="product-note">No direct retailer link has been recorded for this listing.</p>}
+
+        {onSessionDismiss && <button type="button" className="discover-secondary" onClick={() => onSessionDismiss(product.id)}>Not suitable for me (this session)</button>}
 
         {canGiveFeedback ? (
           <div className="feedback">
