@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata = { title: "Page not found — FEELING FIND" };
+export const metadata = { title: "Page not found — FEELING FINE" };
 
 // Shown for unknown addresses.
 export default function NotFound() {

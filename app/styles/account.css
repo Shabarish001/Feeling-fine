@@ -48,3 +48,27 @@
 .state-page { max-width: 640px; margin: var(--s-9) auto; padding: 0 var(--inset); text-align: left; }
 .state-page h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: var(--s-3); }
 .state-page p.muted { margin-bottom: var(--s-5); }
+
+/* ---- About hero: photo as background, text on a soft fade (stacked on phones) ---- */
+.about-banner {
+  position: relative; margin: var(--s-4) 0 var(--s-8); min-height: clamp(460px, 46vw, 600px);
+  border-radius: var(--r-sheet); overflow: hidden; box-shadow: var(--shadow-2); display: flex; align-items: center;
+}
+.about-banner { background: linear-gradient(135deg, #fbf8f2, var(--lavender-100)); }
+/* Photo fills the right part so all four people stay visible; the text sits on the ivory to its left. */
+.about-banner-media { position: absolute; top: 0; bottom: 0; right: 0; left: 36%; }
+.about-banner-media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; display: block; }
+/* Soft blend of the photo's left edge into the ivory. */
+.about-banner-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #f8f4ee 0%, rgb(248 244 238 / .6) 9%, transparent 22%); }
+.about-banner-text { position: relative; z-index: 1; max-width: 40%; padding: var(--s-7) var(--s-6); }
+.about-banner-text h1 { font-size: clamp(2rem, 3.3vw, 2.9rem); margin-bottom: var(--s-4); }
+.about-banner-text .lead { color: var(--ink); font-size: 1.05rem; margin-bottom: var(--s-5); }
+
+@media (max-width: 760px) {
+  .about-banner { display: block; min-height: 0; overflow: visible; box-shadow: none; background: none; }
+  .about-banner-media { position: relative; left: auto; border-radius: var(--r-sheet); overflow: hidden; box-shadow: var(--shadow-2); }
+  .about-banner-media img { aspect-ratio: 4 / 3; height: auto; object-position: 72% center; }
+  .about-banner-media::after { display: none; }
+  .about-banner-text { max-width: none; padding: var(--s-5) 0 0; }
+  .about-banner-text h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
+}

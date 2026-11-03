@@ -6,7 +6,7 @@ import ProfileForm from "@/components/ProfileForm";
 import FileManager from "@/components/FileManager";
 
 // PAGE 4 — User profile: view and edit your details, and manage your files.
-export const metadata = { title: "My Profile — FEELING FIND" };
+export const metadata = { title: "My Profile — FEELING FINE" };
 
 function ProfileHeader({ signedIn }) {
   return (

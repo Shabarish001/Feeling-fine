@@ -1,7 +1,7 @@
 import AuthForm from "@/components/AuthForm";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 
-export const metadata = { title: "Sign In — FEELING FIND" };
+export const metadata = { title: "Sign In — FEELING FINE" };
 
 export default async function LoginPage({ searchParams }) {
   const params = await searchParams;

@@ -30,6 +30,8 @@ p { margin-top: 0; }
 a { color: var(--lavender-800); text-underline-offset: 3px; }
 a:hover { color: var(--lavender-600); }
 em { font-style: italic; color: var(--lavender-600); }
+/* Accent words in headings use the Pacifico script (it has no italic, so none is synthesized). */
+h1 em, h2 em, .auth-quote em { font-family: var(--font-script); font-style: normal; font-weight: 400; letter-spacing: 0; line-height: 1.35; }
 img { max-width: 100%; }
 
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }

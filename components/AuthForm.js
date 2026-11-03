@@ -21,7 +21,7 @@ export default function AuthForm({ mode, next, notice }) {
   return (
     <div className="auth-wrap">
       <aside className="auth-art" aria-hidden="true">
-        <p className="eyebrow">Feeling Find</p>
+        <p className="eyebrow">Feeling Fine</p>
         <p className="auth-quote">Wear what<br /><em>feels right.</em></p>
         <FabricSculpture />
       </aside>

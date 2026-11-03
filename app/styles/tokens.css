@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FEELING FIND — design tokens (Project Brand System + Liquid Glass material)
+   FEELING FINE — design tokens (Project Brand System + Liquid Glass material)
    One knob per property: change a value here and every page follows.
    ========================================================================== */
 :root {
@@ -24,6 +24,7 @@
 
   /* ---- Type ---- */
   --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-script: var(--font-pacifico), "Segoe Script", cursive;            /* Pacifico for accent words */
   --font-body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* ---- Space (4/8 base) ---- */

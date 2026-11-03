@@ -30,7 +30,7 @@ export default function HomePage() {
     <>
       <section className="fashion-hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">Feeling Find · Wear what feels right</p>
+          <p className="eyebrow">Feeling Fine · Wear what feels right</p>
           <h1 id="hero-title">Style that moves<br /><em>with you.</em></h1>
           <p className="hero-lede">Discover clothing shaped around your comfort, your body and your taste, from pieces that fasten with one hand to fabrics that are kind to sensitive skin.</p>
           <div className="hero-actions">

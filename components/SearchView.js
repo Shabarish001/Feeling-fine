@@ -72,7 +72,7 @@ export default function SearchView() {
               <div key={i} className="msg-assistant">
                 <img src="/logo.svg" alt="" />
                 <div className="body">
-                  <span className="sr-only">FEELING FIND assistant says:</span>
+                  <span className="sr-only">FEELING FINE assistant says:</span>
                   <MessageText text={m.content} />
                 </div>
               </div>

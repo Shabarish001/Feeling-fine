@@ -2,7 +2,7 @@ import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 
 // PAGE 3 — About the company. Edit the text to tell your team's story.
-export const metadata = { title: "About — FEELING FIND" };
+export const metadata = { title: "About — FEELING FINE" };
 
 const VALUES = [
   {
@@ -22,13 +22,26 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <div className="container">
-      <section className="about-hero">
-        <p className="eyebrow">About Feeling Find</p>
-        <h1>Fashion that <em>fits your life.</em></h1>
-        <p className="lead">
-          We help people with visible and invisible disabilities find adaptive clothing by simply describing what they
-          need.
-        </p>
+      {/* Hero: the photo is the background; the text sits on a soft fade on the left (photo above text on phones). */}
+      <section className="about-banner" aria-labelledby="about-title">
+        <div className="about-banner-media">
+          <img
+            src="/about-bg.jpeg"
+            width="1672"
+            height="941"
+            alt="Four smiling young people in a clothing store: a man with a white cane, a woman using a wheelchair, a woman with a prosthetic arm and a man with a prosthetic leg."
+          />
+        </div>
+        <div className="about-banner-text">
+          <p className="eyebrow">About Feeling Fine</p>
+          <h1 id="about-title">Fashion for <em>everyone.</em> Without limits.</h1>
+          <p className="lead">
+            At Feeling Fine, we believe that style is a right, not a privilege. Our mission is to help people with
+            visible and invisible disabilities find adaptive clothing easily, so they can feel confident, comfortable
+            and independent.
+          </p>
+          <a className="btn" href="#our-story">Discover our mission <span aria-hidden="true">→</span></a>
+        </div>
       </section>
 
       <section className="values" aria-label="What we believe">
@@ -41,14 +54,14 @@ export default function AboutPage() {
         ))}
       </section>
 
-      <section className="card narrow story-card">
+      <section className="card narrow story-card" id="our-story">
         <h2>Our story</h2>
         <p>
           Finding clothes that work with a wheelchair, a prosthesis, limited hand movement or sensory needs often
-          means hours of searching. FEELING FIND brings it together in one place: chat with our assistant, see
+          means hours of searching. FEELING FINE brings it together in one place: chat with our assistant, see
           the results on a map, and visit the shop that suits you.
         </p>
-        <p>FEELING FIND started as a hackathon project in Berlin in 2026.</p>
+        <p>FEELING FINE started as a hackathon project in Berlin in 2026.</p>
         <h2>Your privacy</h2>
         <p>
           Anything you tell us about your needs is private to your account. We only use it to improve your search

@@ -21,7 +21,7 @@ export default async function Header() {
   return (
     <header className="site-header">
       <div className="header-inner glass glass-regular">
-        <Link href="/" className="brand" aria-label="FEELING FIND home">
+        <Link href="/" className="brand" aria-label="FEELING FINE home">
           <img src="/feeling-fine-logo.jpeg" alt="" width="1600" height="900" />
         </Link>
 

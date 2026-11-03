@@ -169,9 +169,9 @@ export default function OnboardingWizard() {
     <div className="discover-shell">
       <div className="discover-layout">
         <aside className="discover-intro">
-          <p className="eyebrow">Feeling Find · Personal edit</p>
-          <h1>Wear what<br /><em>feels right.</em></h1>
-          <p className="intro-lede">Three short questions. Your kind of style comes next, once you can see what is available.</p>
+          <p className="eyebrow">Feeling Fine · Personal edit</p>
+          <h1>Wear what<br /><em>makes you feel fine.</em></h1>
+          <p className="intro-lede">Just three quick questions before you find your style!</p>
           <button type="button" className="discover-button" onClick={() => setCompanion(true)}>Talk to my Fit Companion</button>
           <div className="editorial-art" aria-hidden="true"><FabricSculpture /></div>
           <p className="intro-small">No diagnosis needed. Explore as a guest, or save your choices to your account.</p>
