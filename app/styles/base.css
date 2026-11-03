@@ -9,7 +9,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  font-family: var(--font-body);
+  font-family: var(--font-site);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@ body {
     radial-gradient(900px 700px at 70% 100%, rgb(169 155 217 / .20), transparent 62%);
   background-attachment: fixed;
 }
+button, input, select, textarea { font-family: var(--font-site); }
 
 h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.12; letter-spacing: -.01em; color: var(--ink); margin-top: 0; }
 h1 { font-size: clamp(2.3rem, 5vw, 4rem); }
@@ -30,8 +31,6 @@ p { margin-top: 0; }
 a { color: var(--lavender-800); text-underline-offset: 3px; }
 a:hover { color: var(--lavender-600); }
 em { font-style: italic; color: var(--lavender-600); }
-/* Accent words in headings use the Pacifico script (it has no italic, so none is synthesized). */
-h1 em, h2 em, .auth-quote em { font-family: var(--font-script); font-style: normal; font-weight: 400; letter-spacing: 0; line-height: 1.35; }
 img { max-width: 100%; }
 
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
@@ -56,7 +55,7 @@ main { flex: 1; width: 100%; }
 .brand { display: flex; align-items: center; flex-shrink: 0; text-decoration: none; color: var(--ink); }
 .brand img {
   display: block; width: 210px; height: 48px; object-fit: cover; object-position: center;
-  border: 1px solid rgb(119 157 76 / .22); border-radius: 12px;
+  border: 1px solid rgb(119 157 76 / .22); border-radius: var(--r-pill);
   box-shadow: 0 2px 8px rgb(59 47 34 / .08); mix-blend-mode: multiply;
 }
 .main-nav { display: flex; gap: 2px; margin-left: auto; align-items: center; }

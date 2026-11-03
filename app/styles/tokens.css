@@ -23,9 +23,9 @@
   --focus:     #4a37b8;
 
   /* ---- Type ---- */
-  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  --font-script: var(--font-pacifico), "Segoe Script", cursive;            /* Pacifico for accent words */
-  --font-body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-site: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-site);
+  --font-display: var(--font-site);
 
   /* ---- Space (4/8 base) ---- */
   --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px;
