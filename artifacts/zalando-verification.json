@@ -1,0 +1,140 @@
+{
+  "checkedAt": "2026-11-03T06:35:14.525Z",
+  "results": [
+    {
+      "url": "https://en.zalando.de/tommy-hilfiger-solid-heritage-shirt-opthic-white-to122d1sp-a11.html",
+      "checkedAt": "2026-11-03T06:34:18.666Z",
+      "status": 200,
+      "title": "Tommy Hilfiger ADAPTIVE REGULAR FIT OXFORD SHIRT - Shirt - opthic white/white - Zalando",
+      "code": "TO122D1SP-A11",
+      "features": "cuff openings, magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/tommy-hilfiger-shirt-unisex-shirt-black-to121005o-q11.html",
+      "checkedAt": "2026-11-03T06:34:19.251Z",
+      "status": 200,
+      "title": "Tommy Hilfiger SHIRT UNISEX - Button-down blouse - black - Zalando",
+      "code": "TO121005O-Q11",
+      "features": "magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/tommy-hilfiger-easy-fit-shirt-button-down-blouse-optic-white-to121e16x-a11.html",
+      "checkedAt": "2026-11-03T06:34:19.864Z",
+      "status": 200,
+      "title": "Tommy Hilfiger EASY FIT SHIRT - Button-down blouse - optic white/white - Zalando",
+      "code": "TO121E16X-A11",
+      "features": "cuff openings, magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/pier-one-by-zalando-adaptive-workwear-heavy-overshirt-shirt-mottled-grey-pi922d0kt-c11.html",
+      "checkedAt": "2026-11-03T06:34:20.406Z",
+      "status": 200,
+      "title": "Pier One by Zalando ADAPTIVE WORKWEAR HEAVY OVERSHIRT - Shirt - mottled grey - Zalando",
+      "code": "PI922D0KT-C11",
+      "features": "magnetic closure, low front, high back, wheelchair friendly",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/anna-field-button-down-blouse-white-an621e0er-a11.html",
+      "checkedAt": "2026-11-03T06:34:21.027Z",
+      "status": 200,
+      "title": "Anna Field by Zalando ADAPTIVE SHIRT - Button-down blouse -  white/white - Zalando",
+      "code": "AN621E0ER-A11",
+      "features": "wide neck opening, magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/pier-one-sport-basic-standard-fit-adaptiveps-adapt-basic-t-shirt-black-phz42d00h-q11.html",
+      "checkedAt": "2026-11-03T06:34:21.577Z",
+      "status": 404,
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/tommy-hilfiger-chest-insert-tee-print-t-shirt-black-to122o0zt-q11.html",
+      "checkedAt": "2026-11-03T06:34:21.858Z",
+      "status": 200,
+      "title": "Tommy Hilfiger ADAPTIVE LOGO INSERT JERSEY T-SHIRT - Print T-shirt - black - Zalando",
+      "code": "TO122O0ZT-Q11",
+      "features": "magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/tommy-hilfiger-essential-unisex-long-sleeved-top-burgundy-to126g05x-g11.html",
+      "checkedAt": "2026-11-03T06:34:22.408Z",
+      "status": 404,
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/evenandodd-by-zalando-adaptive-tracksuit-bottom-trousers-black-ev421a0kf-q11.html",
+      "checkedAt": "2026-11-03T06:34:22.752Z",
+      "status": 200,
+      "title": "Even&Odd by Zalando ADAPTIVE TRACKSUIT BOTTOM - Trousers - black - Zalando",
+      "code": "EV421A0KF-Q11",
+      "features": "hem openings, magnetic closure",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/anna-field-adaptive-culotte-trousers-whitecap-gray-an621a0bc-c11.html",
+      "checkedAt": "2026-11-03T06:34:23.690Z",
+      "status": "error",
+      "error": "TimeoutError",
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/yourturn-unisex-trousers-chocolate-yo12101pk-o11.html",
+      "checkedAt": "2026-11-03T06:34:38.708Z",
+      "status": "error",
+      "error": "TimeoutError",
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/yourturn-summer-checks-unisex-trousers-green-yo12101qh-m11.html",
+      "checkedAt": "2026-11-03T06:34:53.807Z",
+      "status": 200,
+      "title": "YOURTURN by Zalando UNISEX - Trousers - green - Zalando",
+      "code": "YO12101QH-M11",
+      "features": "low front, high back",
+      "verified": true
+    },
+    {
+      "url": "https://en.zalando.de/evenandodd-tailored-wide-leg-trousers-trousers-wood-ash-ev421a0hv-b11.html",
+      "checkedAt": "2026-11-03T06:34:54.575Z",
+      "status": "error",
+      "error": "TimeoutError",
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/anna-field-trousers-black-an621a06t-q11.html",
+      "checkedAt": "2026-11-03T06:35:09.589Z",
+      "status": 429,
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/evenandodd-straight-leg-jeans-black-denim-ev421n05x-q11.html",
+      "checkedAt": "2026-11-03T06:35:13.073Z",
+      "status": 429,
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/evenandodd-trousers-black-ev421a0c1-q11.html",
+      "checkedAt": "2026-11-03T06:35:13.604Z",
+      "status": 429,
+      "verified": false
+    },
+    {
+      "url": "https://en.zalando.de/pier-one-adaptive-cargo-jogger-cargo-trousers-black-pi922e07u-q11.html",
+      "checkedAt": "2026-11-03T06:35:13.844Z",
+      "status": 429,
+      "verified": false
+    },
+    {
+      "url": "https://www.zalando.de/adidas-performance-stoffhose-black-ad542e3n1-q11.html",
+      "checkedAt": "2026-11-03T06:35:14.090Z",
+      "status": 429,
+      "verified": false
+    }
+  ]
+}

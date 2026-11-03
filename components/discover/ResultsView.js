@@ -47,7 +47,7 @@ export default function ResultsView({ result, account, prefs, set, toggle, busy,
           <h1>Made for the way<br />you move.</h1>
           <p className="result-summary">{result.summary}</p>
         </div>
-        <button className="discover-secondary" onClick={onEdit}>Change my answers</button>
+        <button className="discover-secondary" onClick={() => onEdit(0)}>Change my answers</button>
       </div>
 
       <div className={`demo-notice ${demo ? 'is-demo' : 'is-live'}`} role="status">
@@ -132,9 +132,21 @@ export default function ResultsView({ result, account, prefs, set, toggle, busy,
               <h2>No matches available</h2>
               <p>There may be no catalog products with enough evidence for your requirements. Your restrictions have not been relaxed.</p>
               <ul className="empty-reasons">{empty.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
+              {result.diagnostics?.filters?.some((f) => f.filter === 'avoid_materials' && f.excluded > 0 && f.remaining === 0) && (
+                <p>You can review your material choices. We will keep them unless you choose to change them.</p>
+              )}
+              {result.diagnostics?.filters?.some((f) => f.filter === 'required_features' && f.excluded > 0 && f.remaining === 0) && (
+                <p>Every feature you marked as required must be documented for the same garment. Missing evidence does not necessarily mean the garment lacks the feature.</p>
+              )}
               <div className="empty-actions">
                 {empty.actions.map((a) => <button key={a.id} className="discover-button" onClick={() => onRerun(a.patch)}>{a.label}</button>)}
-                <button className="discover-secondary" onClick={onEdit}>Change my answers</button>
+                {result.diagnostics?.filters?.some((f) => f.filter === 'avoid_materials' && f.excluded > 0 && f.remaining === 0) && (
+                  <button type="button" className="discover-button" onClick={() => onEdit(2)}>Review material choices</button>
+                )}
+                {result.diagnostics?.filters?.some((f) => f.filter === 'required_features' && f.excluded > 0 && f.remaining === 0) && (
+                  <button type="button" className="discover-button" onClick={() => onEdit(2)}>Review required features</button>
+                )}
+                <button className="discover-secondary" onClick={() => onEdit(0)}>Change my answers</button>
               </div>
             </div>
           ) : shown.length === 0 ? (

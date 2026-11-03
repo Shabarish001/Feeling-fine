@@ -43,16 +43,26 @@ test('a non-https retailer link is dropped', () => {
   assert.equal(adaptCatalog(row).offers[0].product_url, null);
 });
 
-test('seller-claimed features make a product relevant to a need, labelled as unverified', async () => {
-  const r = await live({ needs: ['easy_fastening'] });
-  assert.deepEqual(r.results.map((p) => p.title.replace(' (test data)', '')), ['FIXTURE Magnetic Shirt']);
-  const reasons = r.results[0].match_reasons.join(' ');
-  assert.match(reasons, /Seller-claimed feature \(not independently verified\): easy fastening/);
-  assert.doesNotMatch(reasons, /^Documented/);
+test('seller claims alone cannot establish an accessibility match', async () => {
+  const row=structuredClone(fixtureLiveRows[0]);
+  row.product_evidence=row.product_evidence.filter(e=>e.attribute!=='easy_fastening');
+  const db={from(){return {select(){return this},in(){return this},limit:async()=>({data:[row],error:null})}}};
+  const r=await graphRecommend({...defaults,mode:'live',needs:['easy_fastening']},{db,userId:null});
+  assert.deepEqual(r.results,[]);
+});
+
+test('unsourced seller claims cannot establish relevance to an accessibility need', async () => {
+  const row = structuredClone(fixtureLiveRows[0]);
+  row.product_evidence = row.product_evidence.filter(e=>e.attribute!=='easy_fastening').map(e => e.evidence_type === 'unverified_seller_claim' ? {...e, source_url: null, checked_at: null} : e);
+  const adapted=adaptCatalog(row);
+  const db={from(){return {select(){return this},in(){return this},limit:async()=>({data:[row],error:null})}}};
+  const r=await graphRecommend({...defaults,mode:'live',needs:['easy_fastening']},{db,userId:null});
+  assert.ok(adapted.evidence.some(e=>e.evidence_type==='unverified_seller_claim'));
+  assert.deepEqual(r.results,[]);
 });
 
 test('seller claims never satisfy a required feature (hard restriction stays strict)', async () => {
-  assert.deepEqual((await live({ required_features: ['easy_fastening'] })).results, []);
+  assert.deepEqual((await live({ required_features: ['limited_dexterity'] })).results, []);
 });
 
 test('verified evidence satisfies a required feature', async () => {

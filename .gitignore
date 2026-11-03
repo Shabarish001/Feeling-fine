@@ -6,3 +6,10 @@ node_modules
 .next-e2e
 playwright-report
 test-results
+data/imports/datafeed_*.csv
+artifacts/awin-feed-review.json
+artifacts/awin-diverse-review.json
+data/imports/awin-approvals.json
+artifacts/zalando-import-journal.json
+artifacts/zalando-csv-research-journal.json
+__pycache__/
